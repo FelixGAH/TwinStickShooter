@@ -43,3 +43,7 @@ Thumbs.db
 *.log
 *.tmp
 Models/UV Unwraps/Subs/USA/SSN571/ssn571_bridge_ALLMAPS_6k.psd
+\saved
+*.ini
+*.ini
+*.log
