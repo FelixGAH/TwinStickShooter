@@ -9,6 +9,8 @@
 *.lo
 *.o
 *.obj
+*.log
+*ini
 
 # Precompiled Headers
 *.gch
