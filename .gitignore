@@ -61,3 +61,12 @@ SourceArt/**/*.tga
 
 # Mac Artifacts
 .DS_Store
+*.bin
+*.bin
+*.png
+*.ini
+*.log
+*.log
+TwinStickShooter 4.18/Saved/Logs/TwinStickShooter.log
+*.png
+*.bin
