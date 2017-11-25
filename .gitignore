@@ -9,13 +9,10 @@
 *.lo
 *.o
 *.obj
-*.log
-*ini
 
 # Precompiled Headers
 *.gch
 *.pch
-
 
 # Compiled Dynamic libraries
 *.so
@@ -76,10 +73,3 @@ Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
-*.ini
-*.png
-*.log
-*.bin
-*.bin
-*.png
-*.log
