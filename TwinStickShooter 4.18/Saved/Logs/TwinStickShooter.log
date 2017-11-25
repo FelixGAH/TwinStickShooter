@@ -1,18 +1,20 @@
-﻿Log file open, 11/25/17 00:18:51
+﻿Log file open, 11/25/17 11:28:36
 LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
 LogWindows: File 'aqProf.dll' does not exist
+LogWindows: Failed to load 'VSPerf140.dll' (GetLastError=126)
+LogWindows: File 'VSPerf140.dll' does not exist
 LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
 LogWindows: File 'VtuneApi.dll' does not exist
 LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
 LogWindows: File 'VtuneApi32e.dll' does not exist
 LogInit: Display: Running engine for game: TwinStickShooter
 LogPlatformFile: Not using cached read wrapper
-LogInit: Display: RandInit(-1051270481) SRandInit(-1051270480).
+LogInit: Display: RandInit(546867524) SRandInit(546867524).
 LogInit: Read version file with build ID '3709383'
 LogInit: Overriding engine version to CL 3754814, compatible CL 3709383
 LogInit: Registered custom module enumerator with build ID '3709383'
 LogTaskGraph: Started task graph with 5 named threads and 14 total threads with 3 sets of task threads.
-LogStats: Stats thread started at 0.171336
+LogStats: Stats thread started at 0.179469
 LogD3D11RHI: Aftermath initialized
 LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/2D/Paper2D/Binaries/Win64/UE4Editor-Paper2D.dll (API version 3709383).
 LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/2D/Paper2D/Binaries/Win64/UE4Editor-Paper2DEditor.dll (API version 3709383).
@@ -190,457 +192,734 @@ LogInit: Compiled with Visual C++: 19.00.24215.01
 LogInit: Build Configuration: Development
 LogInit: Branch Name: ++UE4+Release-4.18
 LogInit: Command line: -EpicPortal 
-LogInit: Base directory: D:/EpicLauncher/UnrealEngine/UE_4.18/Engine/Binaries/Win64/
+LogInit: Base directory: C:/Program Files/Epic Games/UE_4.18/Engine/Binaries/Win64/
 LogInit: Installed Engine Build: 1
 LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
 LogInit: Object subsystem initialized
-[2017.11.24-23.18.53:279][  0]LogInit: Selected Device Profile: [Windows]
-[2017.11.24-23.18.53:279][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2017.11.24-23.18.53:289][  0]LogInit: Computer: DESKTOP-K7D836G
-[2017.11.24-23.18.53:289][  0]LogInit: User: tobia
-[2017.11.24-23.18.53:289][  0]LogInit: CPU Page size=4096, Cores=4
-[2017.11.24-23.18.53:289][  0]LogInit: High frequency timer resolution =2.531248 MHz
-[2017.11.24-23.18.53:289][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
-[2017.11.24-23.18.53:289][  0]LogMemory: Platform Memory Stats for Windows
-[2017.11.24-23.18.53:289][  0]LogMemory: Process Physical Memory: 273.47 MB used, 273.47 MB peak
-[2017.11.24-23.18.53:289][  0]LogMemory: Process Virtual Memory: 269.73 MB used, 269.73 MB peak
-[2017.11.24-23.18.53:289][  0]LogMemory: Physical Memory: 5866.02 MB used,  2224.51 MB free, 8090.53 MB total
-[2017.11.24-23.18.53:289][  0]LogMemory: Virtual Memory: 644.45 MB used,  2224.51 MB free, 134217728.00 MB total
-[2017.11.24-23.18.53:399][  0]LogInit: Using OS detected language (de-DE).
-[2017.11.24-23.18.53:399][  0]LogInit: Using OS detected locale (de-DE).
-[2017.11.24-23.18.53:404][  0]LogTextLocalizationManager: No localization for 'de-DE' exists, so 'en' will be used for the language.
-[2017.11.24-23.18.53:404][  0]LogTextLocalizationManager: No localization for 'de-DE' exists, so 'en' will be used for the locale.
-[2017.11.24-23.18.53:902][  0]LogInit: Setting process to per monitor DPI aware
-[2017.11.24-23.18.54:176][  0]LogD3D11RHI: D3D11 adapters:
-[2017.11.24-23.18.54:791][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 960M' (Feature Level 11_0)
-[2017.11.24-23.18.54:791][  0]LogD3D11RHI:       2019/0/4045 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
-[2017.11.24-23.18.54:800][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 530' (Feature Level 11_0)
-[2017.11.24-23.18.54:800][  0]LogD3D11RHI:       128/0/4045 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
-[2017.11.24-23.18.54:801][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2017.11.24-23.18.54:801][  0]LogD3D11RHI:       0/0/4045 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2017.11.24-23.18.54:801][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2017.11.24-23.18.54:807][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2017.11.24-23.18.54:807][  0]LogD3D11RHI:     GPU DeviceId: 0x139b (for the marketing name, search the web for "GPU Device Id")
-[2017.11.24-23.18.54:807][  0]LogWindows: EnumDisplayDevices:
-[2017.11.24-23.18.54:807][  0]LogWindows:    0. 'Intel(R) HD Graphics 530' (P:0 D:1)
-[2017.11.24-23.18.54:808][  0]LogWindows:    1. 'Intel(R) HD Graphics 530' (P:1 D:1)
-[2017.11.24-23.18.54:808][  0]LogWindows:    2. 'Intel(R) HD Graphics 530' (P:0 D:0)
-[2017.11.24-23.18.54:808][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
-[2017.11.24-23.18.54:808][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 960M
-[2017.11.24-23.18.54:808][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
-[2017.11.24-23.18.54:808][  0]LogD3D11RHI:      Driver Date: Unknown
-[2017.11.24-23.18.54:808][  0]LogRHI: Texture pool is 1413 MB (70% of 2019 MB)
-[2017.11.24-23.18.55:621][  0]LogD3D11RHI: Async texture creation enabled
-[2017.11.24-23.18.55:642][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
-[2017.11.24-23.18.55:643][  0]LogShaderCompilers: Guid format shader working directory is -12 characters bigger than the processId version (../../../../../Repo/TwinStickShooter/TwinStickShooter 4.18/Intermediate/Shaders/WorkingDirectory/4040/).
-[2017.11.24-23.18.55:643][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/tobia/AppData/Local/Temp/UnrealShaderWorkingDir/889A30CC4D362C68C6F5A19F360F5126/'.
-[2017.11.24-23.18.55:643][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
-[2017.11.24-23.18.56:585][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
-[2017.11.24-23.18.56:625][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
-[2017.11.24-23.18.56:664][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
-[2017.11.24-23.18.56:706][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
-[2017.11.24-23.18.56:749][  0]LogTemp: Display: Loaded TP MacTargetPlatform
-[2017.11.24-23.18.56:788][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
-[2017.11.24-23.18.56:829][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
-[2017.11.24-23.18.56:869][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
-[2017.11.24-23.18.56:902][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
-[2017.11.24-23.18.56:942][  0]LogTemp: Display: Loaded TP Android_ASTCTargetPlatform
-[2017.11.24-23.18.56:983][  0]LogTemp: Display: Loaded TP Android_ATCTargetPlatform
-[2017.11.24-23.18.57:023][  0]LogTemp: Display: Loaded TP Android_DXTTargetPlatform
-[2017.11.24-23.18.57:062][  0]LogTemp: Display: Loaded TP Android_ETC1TargetPlatform
-[2017.11.24-23.18.57:101][  0]LogTemp: Display: Loaded TP Android_ETC2TargetPlatform
-[2017.11.24-23.18.57:180][  0]LogTemp: Display: Loaded TP Android_MultiTargetPlatform
-[2017.11.24-23.18.57:180][  0]LogTemp: Display: Loaded TP Android_PVRTCTargetPlatform
-[2017.11.24-23.18.57:222][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2017.11.24-23.18.57:250][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
-[2017.11.24-23.18.57:325][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
-[2017.11.24-23.18.57:350][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
-[2017.11.24-23.18.57:389][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
-[2017.11.24-23.18.57:430][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
-[2017.11.24-23.18.57:469][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
-[2017.11.24-23.18.57:508][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
-[2017.11.24-23.18.57:508][  0]LogTargetPlatformManager: Display: Building Assets For Windows
-[2017.11.24-23.18.57:848][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
-[2017.11.24-23.18.57:950][  0]LogDerivedDataCache: Loaded boot cache 0.10s 78MB C:/Users/tobia/AppData/Local/UnrealEngine/4.18/DerivedDataCache/Boot.ddc.
-[2017.11.24-23.18.57:950][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/tobia/AppData/Local/UnrealEngine/4.18/DerivedDataCache/Boot.ddc
-[2017.11.24-23.18.57:950][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../Repo/TwinStickShooter/TwinStickShooter 4.18/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2017.11.24-23.18.57:950][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2017.11.24-23.18.57:950][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../Repo/TwinStickShooter/TwinStickShooter 4.18/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2017.11.24-23.18.57:950][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2017.11.24-23.18.57:967][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2017.11.24-23.18.57:980][  0]LogDerivedDataCache: Using Local data cache path C:/Users/tobia/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2017.11.24-23.18.57:991][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
-[2017.11.24-23.18.57:991][  0]LogSlate: Using Freetype 2.6.0
-[2017.11.24-23.18.57:992][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2017.11.24-23.18.57:992][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2017.11.24-23.18.58:359][  0]LogInit: Selected Device Profile: [Windows]
-[2017.11.24-23.18.58:642][  0]LogSimplygon: Simplygon DLL not present - disabling.
-[2017.11.24-23.18.58:670][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
-[2017.11.24-23.18.58:670][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
-[2017.11.24-23.18.58:670][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
-[2017.11.24-23.18.58:670][  0]LogMeshReduction: No automatic mesh merging module available
-[2017.11.24-23.18.58:670][  0]LogMeshMerging: No automatic mesh merging module available
-[2017.11.24-23.18.58:705][  0]LogNetVersion: TwinStickShooter , NetCL: 3709383, EngineNetVer: 2, GameNetVer: 0 (Checksum: 4163484994)
-[2017.11.24-23.18.58:864][  0]LogAssetRegistry: FAssetRegistry took 0.0270 seconds to start up
-[2017.11.24-23.18.59:391][  0]LogPackageLocalizationCache: Processed 7 localized package path(s) for 1 prioritized culture(s) in 0.030042 seconds
-[2017.11.24-23.18.59:399][  0]LogUObjectArray: 35900 objects as part of root set at end of initial load.
-[2017.11.24-23.18.59:399][  0]LogUObjectAllocator: 7372024 out of 0 bytes used by permanent object pool.
-[2017.11.24-23.18.59:399][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2017.11.24-23.18.59:451][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
-[2017.11.24-23.19.02:107][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2017.11.24-23.19.02:143][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2017.11.24-23.19.02:675][  0]LogMaterial: Uniform references updated for custom material expression Custom.
-[2017.11.24-23.19.03:017][  0]SourceControl: Source control is disabled
-[2017.11.24-23.19.03:018][  0]SourceControl: Source control is disabled
-[2017.11.24-23.19.03:057][  0]SourceControl: Source control is disabled
-[2017.11.24-23.19.03:096][  0]SourceControl: Source control is disabled
-[2017.11.24-23.19.03:716][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
-[2017.11.24-23.19.03:917][  0]LogOcInput: OculusInput pre-init called
-[2017.11.24-23.19.04:145][  0]LogEngine: Initializing Engine...
-[2017.11.24-23.19.04:147][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2017.11.24-23.19.04:392][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2017.11.24-23.19.04:392][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2017.11.24-23.19.04:491][  0]LogAIModule: Creating AISystem for world Untitled
-[2017.11.24-23.19.04:505][  0]LogInit: XAudio2 using 'Speakers (Conexant SmartAudio HD)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2017.11.24-23.19.04:542][  0]LogInit: FAudioDevice initialized.
-[2017.11.24-23.19.04:648][  0]LogDerivedDataCache: Saved boot cache 0.11s 78MB C:/Users/tobia/AppData/Local/UnrealEngine/4.18/DerivedDataCache/Boot.ddc.
-[2017.11.24-23.19.04:665][  0]LogInit: Texture streaming: Enabled
-[2017.11.24-23.19.04:740][  0]LogEngineSessionManager: EngineSessionManager initialized
-[2017.11.24-23.19.04:835][  0]LogInit: Transaction tracking system initialized
-[2017.11.24-23.19.05:062][  0]BlueprintLog: New page: Editor Load
-[2017.11.24-23.19.05:713][  0]LocalizationService: Localization service is disabled
-[2017.11.24-23.19.06:261][  0]LogConsoleResponse: Display: 
-[2017.11.24-23.19.06:430][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
-[2017.11.24-23.19.06:430][  0]LogCook: Display: Mobile HDR setting 1
-[2017.11.24-23.19.06:430][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
-[2017.11.24-23.19.07:285][  0]LogFileCache: Scanning file cache for directory 'D:/EpicLauncher/Repo/TwinStickShooter/TwinStickShooter 4.18/Content/' took 0.01s
-[2017.11.24-23.19.07:321][  0]SourceControl: Source control is disabled
-[2017.11.24-23.19.07:322][  0]Cmd: MAP LOAD FILE="../../../../../Repo/TwinStickShooter/TwinStickShooter 4.18/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2017.11.24-23.19.07:322][  0]LightingResults: New page: Lighting Build
-[2017.11.24-23.19.07:352][  0]MapCheck: New page: Map Check
-[2017.11.24-23.19.07:352][  0]LightingResults: New page: Lighting Build
-[2017.11.24-23.19.07:853][  0]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
-[2017.11.24-23.19.07:868][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2017.11.24-23.19.07:881][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2017.11.24-23.19.07:927][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 46.878ms to complete.
-[2017.11.24-23.19.07:928][  0]LogFileHelpers: Loading map 'ThirdPersonExampleMap' took 0.606
-[2017.11.24-23.19.08:087][  0]LogCollectionManager: Loaded 0 collections in 0.001111 seconds
-[2017.11.24-23.19.08:161][  0]LogFileCache: Scanning file cache for directory 'D:/EpicLauncher/Repo/TwinStickShooter/TwinStickShooter 4.18/Saved/Collections/' took 0.01s
-[2017.11.24-23.19.08:161][  0]LogFileCache: Scanning file cache for directory 'D:/EpicLauncher/Repo/TwinStickShooter/TwinStickShooter 4.18/Content/Developers/tobia/Collections/' took 0.01s
-[2017.11.24-23.19.08:161][  0]LogFileCache: Scanning file cache for directory 'D:/EpicLauncher/Repo/TwinStickShooter/TwinStickShooter 4.18/Content/Collections/' took 0.01s
-[2017.11.24-23.19.08:161][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000000 seconds
-[2017.11.24-23.19.08:170][  0]LogContentBrowser: Native class hierarchy populated in 0.0086 seconds. Added 2363 classes and 519 folders.
-[2017.11.24-23.19.08:216][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0002 seconds. Added 0 classes and 0 folders.
-[2017.11.24-23.19.08:253][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0002 seconds. Added 0 classes and 0 folders.
-[2017.11.24-23.19.08:288][  0]LogContentBrowser: Native class hierarchy updated for 'WorldBrowser' in 0.0003 seconds. Added 2 classes and 3 folders.
-[2017.11.24-23.19.08:322][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0003 seconds. Added 1 classes and 2 folders.
-[2017.11.24-23.19.08:341][  0]LogSlate: Took 0.000559 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2017.11.24-23.19.08:345][  0]LogSlate: Took 0.000539 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
-[2017.11.24-23.19.08:354][  0]LogSlate: Took 0.000313 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
-[2017.11.24-23.19.08:476][  0]LogRenderer: Reallocating scene render targets to support 1204x576 Format 9 NumSamples 1 (Frame:1).
-[2017.11.24-23.19.08:708][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0003 seconds. Added 1 classes and 2 folders.
-[2017.11.24-23.19.08:708][  0]LogLoad: (Engine Initialization) Total time: 17.60 seconds
-[2017.11.24-23.19.08:708][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
-[2017.11.24-23.19.08:708][  0]LogExternalProfiler: Found external profiler: VSPerf
-[2017.11.24-23.19.08:708][  0]LogExternalProfiler: Using external profiler: VSPerf
-[2017.11.24-23.19.09:076][  0]LogContentStreaming: Texture pool size now 800 MB
-[2017.11.24-23.19.09:723][  2]LogAssetRegistry: Asset discovery search completed in 10.8812 seconds
-[2017.11.24-23.19.09:725][  2]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000002 seconds (found 0 objects)
-[2017.11.24-23.19.09:725][  2]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000129 seconds (updated 0 objects)
-[2017.11.24-23.19.13:399][ 13]LogSlate: Took 0.000513 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
-[2017.11.24-23.19.54:018][182]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
-[2017.11.24-23.19.54:243][183]Cmd: QUIT_EDITOR
-[2017.11.24-23.19.54:298][183]LogExit: Preparing to exit.
-[2017.11.24-23.19.55:266][183]LogDirectoryWatcher: A directory notification for 'D:/EpicLauncher/Repo/TwinStickShooter/TwinStickShooter 4.18/Content/' was aborted.
-[2017.11.24-23.19.55:334][183]LogExit: Editor shut down
-[2017.11.24-23.19.55:337][183]LogExit: Transaction tracking system shut down
-[2017.11.24-23.19.55:402][183]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
-[2017.11.24-23.19.55:402][183]LogDirectoryWatcher: A directory notification for '../../../../../Repo/TwinStickShooter/TwinStickShooter 4.18/Content/' was aborted.
-[2017.11.24-23.19.55:402][183]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
-[2017.11.24-23.19.55:402][183]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Media/MediaCompositing/Content/' was aborted.
-[2017.11.24-23.19.55:402][183]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/AppleARKit/Content/' was aborted.
-[2017.11.24-23.19.55:402][183]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/Oculus/OculusVR/Content/' was aborted.
-[2017.11.24-23.19.55:402][183]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/Steam/SteamVR/Content/' was aborted.
-[2017.11.24-23.19.55:454][183]LogExit: Object subsystem successfully closed.
-[2017.11.24-23.19.55:476][183]LogD3D11RHI: Shutdown
-[2017.11.24-23.19.55:476][183]LogD3D11RHI: CleanupD3DDevice
-[2017.11.24-23.19.55:478][183]LogD3D11RHI: ~FD3D11DynamicRHI
-[2017.11.24-23.19.55:486][183]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (550)
-[2017.11.24-23.19.55:486][183]LogModuleManager: Shutting down and abandoning module SceneOutliner (548)
-[2017.11.24-23.19.55:486][183]LogModuleManager: Shutting down and abandoning module WorldBrowser (546)
-[2017.11.24-23.19.55:486][183]LogModuleManager: Shutting down and abandoning module AddContentDialog (544)
-[2017.11.24-23.19.55:486][183]LogDirectoryWatcher: A directory notification for 'D:/EpicLauncher/UnrealEngine/UE_4.18/FeaturePacks/' was aborted.
-[2017.11.24-23.19.55:487][183]LogModuleManager: Shutting down and abandoning module WidgetCarousel (543)
-[2017.11.24-23.19.55:487][183]LogModuleManager: Shutting down and abandoning module EditorWidgets (540)
-[2017.11.24-23.19.55:487][183]LogModuleManager: Shutting down and abandoning module CollectionManager (538)
-[2017.11.24-23.19.55:487][183]LogDirectoryWatcher: A directory notification for 'D:/EpicLauncher/Repo/TwinStickShooter/TwinStickShooter 4.18/Content/Collections/' was aborted.
-[2017.11.24-23.19.55:487][183]LogDirectoryWatcher: A directory notification for 'D:/EpicLauncher/Repo/TwinStickShooter/TwinStickShooter 4.18/Content/Developers/tobia/Collections/' was aborted.
-[2017.11.24-23.19.55:487][183]LogDirectoryWatcher: A directory notification for 'D:/EpicLauncher/Repo/TwinStickShooter/TwinStickShooter 4.18/Saved/Collections/' was aborted.
-[2017.11.24-23.19.55:487][183]LogModuleManager: Shutting down and abandoning module StatsViewer (536)
-[2017.11.24-23.19.55:487][183]LogModuleManager: Shutting down and abandoning module FoliageEdit (534)
-[2017.11.24-23.19.55:487][183]LogModuleManager: Shutting down and abandoning module LandscapeEditor (532)
-[2017.11.24-23.19.55:487][183]LogModuleManager: Shutting down and abandoning module MeshPaintMode (530)
-[2017.11.24-23.19.55:487][183]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (528)
-[2017.11.24-23.19.55:487][183]LogModuleManager: Shutting down and abandoning module ActorPickerMode (526)
-[2017.11.24-23.19.55:488][183]LogModuleManager: Shutting down and abandoning module GeometryMode (524)
-[2017.11.24-23.19.55:488][183]LogModuleManager: Shutting down and abandoning module TextureAlignMode (522)
-[2017.11.24-23.19.55:488][183]LogModuleManager: Shutting down and abandoning module BspMode (520)
-[2017.11.24-23.19.55:488][183]LogModuleManager: Shutting down and abandoning module PIEPreviewDeviceProfileSelector (518)
-[2017.11.24-23.19.55:488][183]LogModuleManager: Shutting down and abandoning module HardwareSurvey (516)
-[2017.11.24-23.19.55:488][183]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (514)
-[2017.11.24-23.19.55:488][183]LogModuleManager: Shutting down and abandoning module AutomationWorker (512)
-[2017.11.24-23.19.55:488][183]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (510)
-[2017.11.24-23.19.55:488][183]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (508)
-[2017.11.24-23.19.55:488][183]LogModuleManager: Shutting down and abandoning module PlacementMode (507)
-[2017.11.24-23.19.55:488][183]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (504)
-[2017.11.24-23.19.55:488][183]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (502)
-[2017.11.24-23.19.55:488][183]LogModuleManager: Shutting down and abandoning module OpenExrWrapper (500)
-[2017.11.24-23.19.55:488][183]LogModuleManager: Shutting down and abandoning module ImgMediaFactory (498)
-[2017.11.24-23.19.55:488][183]LogModuleManager: Shutting down and abandoning module ImgMediaEditor (496)
-[2017.11.24-23.19.55:488][183]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (494)
-[2017.11.24-23.19.55:488][183]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (492)
-[2017.11.24-23.19.55:488][183]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (490)
-[2017.11.24-23.19.55:488][183]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (488)
-[2017.11.24-23.19.55:488][183]LogModuleManager: Shutting down and abandoning module CharacterAI (486)
-[2017.11.24-23.19.55:488][183]LogModuleManager: Shutting down and abandoning module AudioCapture (484)
-[2017.11.24-23.19.55:488][183]LogModuleManager: Shutting down and abandoning module SequenceRecorder (483)
-[2017.11.24-23.19.55:488][183]LogModuleManager: Shutting down and abandoning module SmartSnapping (480)
-[2017.11.24-23.19.55:488][183]LogModuleManager: Shutting down and abandoning module SessionServices (478)
-[2017.11.24-23.19.55:488][183]LogModuleManager: Shutting down and abandoning module ViewportSnapping (476)
-[2017.11.24-23.19.55:488][183]LogModuleManager: Shutting down and abandoning module ViewportInteraction (474)
-[2017.11.24-23.19.55:488][183]LogModuleManager: Shutting down and abandoning module ClothPainter (472)
-[2017.11.24-23.19.55:488][183]LogModuleManager: Shutting down and abandoning module SkeletalMeshEditor (471)
-[2017.11.24-23.19.55:488][183]LogModuleManager: Shutting down and abandoning module LogVisualizer (468)
-[2017.11.24-23.19.55:488][183]LogModuleManager: Shutting down and abandoning module IntroTutorials (466)
-[2017.11.24-23.19.55:488][183]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (465)
-[2017.11.24-23.19.55:488][183]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (462)
-[2017.11.24-23.19.55:488][183]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (460)
-[2017.11.24-23.19.55:488][183]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (458)
-[2017.11.24-23.19.55:488][183]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (457)
-[2017.11.24-23.19.56:024][183]LogModuleManager: Shutting down and abandoning module WindowsPlatformEditor (454)
-[2017.11.24-23.19.56:024][183]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (452)
-[2017.11.24-23.19.56:024][183]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (450)
-[2017.11.24-23.19.56:024][183]LogModuleManager: Shutting down and abandoning module InputBindingEditor (448)
-[2017.11.24-23.19.56:024][183]LogModuleManager: Shutting down and abandoning module MergeActors (446)
-[2017.11.24-23.19.56:024][183]LogModuleManager: Shutting down and abandoning module SizeMap (444)
-[2017.11.24-23.19.56:024][183]LogModuleManager: Shutting down and abandoning module TreeMap (442)
-[2017.11.24-23.19.56:024][183]LogModuleManager: Shutting down and abandoning module ReferenceViewer (440)
-[2017.11.24-23.19.56:024][183]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (438)
-[2017.11.24-23.19.56:024][183]LogModuleManager: Shutting down and abandoning module LocalizationService (437)
-[2017.11.24-23.19.56:024][183]LogModuleManager: Shutting down and abandoning module HardwareTargeting (434)
-[2017.11.24-23.19.56:024][183]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (432)
-[2017.11.24-23.19.56:024][183]LogModuleManager: Shutting down and abandoning module UndoHistory (430)
-[2017.11.24-23.19.56:024][183]LogModuleManager: Shutting down and abandoning module XmlParser (428)
-[2017.11.24-23.19.56:024][183]LogModuleManager: Shutting down and abandoning module Blutility (426)
-[2017.11.24-23.19.56:024][183]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (424)
-[2017.11.24-23.19.56:025][183]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (423)
-[2017.11.24-23.19.56:025][183]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (420)
-[2017.11.24-23.19.56:025][183]LogModuleManager: Shutting down and abandoning module SettingsEditor (418)
-[2017.11.24-23.19.56:025][183]LogModuleManager: Shutting down and abandoning module ProjectLauncher (416)
-[2017.11.24-23.19.56:025][183]LogModuleManager: Shutting down and abandoning module SessionFrontend (414)
-[2017.11.24-23.19.56:025][183]LogModuleManager: Shutting down and abandoning module ProfilerClient (412)
-[2017.11.24-23.19.56:025][183]LogModuleManager: Shutting down and abandoning module DeviceManager (410)
-[2017.11.24-23.19.56:025][183]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (409)
-[2017.11.24-23.19.56:080][183]LogModuleManager: Shutting down and abandoning module AutomationController (406)
-[2017.11.24-23.19.56:080][183]LogModuleManager: Shutting down and abandoning module AutomationWindow (404)
-[2017.11.24-23.19.56:080][183]LogModuleManager: Shutting down and abandoning module Layers (402)
-[2017.11.24-23.19.56:080][183]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (400)
-[2017.11.24-23.19.56:080][183]LogModuleManager: Shutting down and abandoning module DetailCustomizations (398)
-[2017.11.24-23.19.56:080][183]LogModuleManager: Shutting down and abandoning module PackagesDialog (396)
-[2017.11.24-23.19.56:080][183]LogModuleManager: Shutting down and abandoning module Persona (394)
-[2017.11.24-23.19.56:080][183]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (393)
-[2017.11.24-23.19.56:080][183]LogModuleManager: Shutting down and abandoning module AnimGraph (391)
-[2017.11.24-23.19.56:080][183]LogModuleManager: Shutting down and abandoning module Kismet (388)
-[2017.11.24-23.19.56:081][183]LogModuleManager: Shutting down and abandoning module ClassViewer (386)
-[2017.11.24-23.19.56:082][183]LogModuleManager: Shutting down and abandoning module Toolbox (384)
-[2017.11.24-23.19.56:082][183]LogModuleManager: Shutting down and abandoning module ModuleUI (382)
-[2017.11.24-23.19.56:082][183]LogModuleManager: Shutting down and abandoning module MovieSceneTools (380)
-[2017.11.24-23.19.56:082][183]LogModuleManager: Shutting down and abandoning module OutputLog (378)
-[2017.11.24-23.19.56:082][183]LogModuleManager: Shutting down and abandoning module GammaUI (376)
-[2017.11.24-23.19.56:082][183]LogModuleManager: Shutting down and abandoning module Documentation (374)
-[2017.11.24-23.19.56:082][183]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (372)
-[2017.11.24-23.19.56:082][183]LogModuleManager: Shutting down and abandoning module MovieScene (370)
-[2017.11.24-23.19.56:082][183]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (368)
-[2017.11.24-23.19.56:082][183]LogModuleManager: Shutting down and abandoning module LauncherPlatform (366)
-[2017.11.24-23.19.56:082][183]LogModuleManager: Shutting down and abandoning module AnalyticsET (364)
-[2017.11.24-23.19.56:082][183]LogModuleManager: Shutting down and abandoning module PortalServices (362)
-[2017.11.24-23.19.56:082][183]LogModuleManager: Shutting down and abandoning module PortalRpc (360)
-[2017.11.24-23.19.56:082][183]LogModuleManager: Shutting down and abandoning module MessagingRpc (358)
-[2017.11.24-23.19.56:082][183]LogModuleManager: Shutting down and abandoning module AIModule (356)
-[2017.11.24-23.19.56:082][183]LogModuleManager: Shutting down and abandoning module GameplayDebugger (355)
-[2017.11.24-23.19.56:082][183]LogModuleManager: Shutting down and abandoning module AITestSuite (353)
-[2017.11.24-23.19.56:082][183]LogModuleManager: Shutting down and abandoning module DesktopPlatform (350)
-[2017.11.24-23.19.56:082][183]LogModuleManager: Shutting down and abandoning module ProfilerService (348)
-[2017.11.24-23.19.56:169][183]LogModuleManager: Shutting down and abandoning module TaskGraph (346)
-[2017.11.24-23.19.56:169][183]LogModuleManager: Shutting down and abandoning module SteamVRController (344)
-[2017.11.24-23.19.56:169][183]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (342)
-[2017.11.24-23.19.56:169][183]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (340)
-[2017.11.24-23.19.56:169][183]LogModuleManager: Shutting down and abandoning module OculusInput (338)
-[2017.11.24-23.19.56:169][183]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (336)
-[2017.11.24-23.19.56:169][183]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (334)
-[2017.11.24-23.19.56:170][183]LogModuleManager: Shutting down and abandoning module CableComponent (332)
-[2017.11.24-23.19.56:170][183]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (330)
-[2017.11.24-23.19.56:170][183]LogModuleManager: Shutting down and abandoning module AndroidPermission (328)
-[2017.11.24-23.19.56:170][183]LogModuleManager: Shutting down and abandoning module ActorSequence (324)
-[2017.11.24-23.19.56:170][183]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (322)
-[2017.11.24-23.19.56:170][183]LogModuleManager: Shutting down and abandoning module MediaCompositingEditor (320)
-[2017.11.24-23.19.56:170][183]LogModuleManager: Shutting down and abandoning module MediaCompositing (318)
-[2017.11.24-23.19.56:170][183]LogModuleManager: Shutting down and abandoning module HTML5Networking (316)
-[2017.11.24-23.19.56:170][183]LogModuleManager: Shutting down and abandoning module AlembicImporter (314)
-[2017.11.24-23.19.56:170][183]LogModuleManager: Shutting down and abandoning module AlembicLibrary (313)
-[2017.11.24-23.19.56:170][183]LogModuleManager: Shutting down and abandoning module GeometryCache (312)
-[2017.11.24-23.19.56:170][183]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (311)
-[2017.11.24-23.19.56:170][183]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (306)
-[2017.11.24-23.19.56:170][183]LogModuleManager: Shutting down and abandoning module PluginBrowser (304)
-[2017.11.24-23.19.56:171][183]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (302)
-[2017.11.24-23.19.56:171][183]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (300)
-[2017.11.24-23.19.56:171][183]LogModuleManager: Shutting down and abandoning module VisualStudioCodeSourceCodeAccess (298)
-[2017.11.24-23.19.56:171][183]LogModuleManager: Shutting down and abandoning module UObjectPlugin (296)
-[2017.11.24-23.19.56:171][183]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (294)
-[2017.11.24-23.19.56:171][183]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (292)
-[2017.11.24-23.19.56:171][183]LogModuleManager: Shutting down and abandoning module GitSourceControl (290)
-[2017.11.24-23.19.56:171][183]LogModuleManager: Shutting down and abandoning module SourceControl (289)
-[2017.11.24-23.19.56:171][183]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (286)
-[2017.11.24-23.19.56:171][183]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (284)
-[2017.11.24-23.19.56:171][183]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (282)
-[2017.11.24-23.19.56:171][183]LogModuleManager: Shutting down and abandoning module Paper2DEditor (280)
-[2017.11.24-23.19.56:172][183]LogModuleManager: Shutting down and abandoning module MeshPaint (279)
-[2017.11.24-23.19.56:172][183]LogModuleManager: Shutting down and abandoning module LevelEditor (277)
-[2017.11.24-23.19.56:174][183]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (276)
-[2017.11.24-23.19.56:174][183]LogModuleManager: Shutting down and abandoning module MainFrame (274)
-[2017.11.24-23.19.56:174][183]LogModuleManager: Shutting down and abandoning module HotReload (273)
-[2017.11.24-23.19.56:175][183]LogModuleManager: Shutting down and abandoning module RuntimePhysXCooking (268)
-[2017.11.24-23.19.56:175][183]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (266)
-[2017.11.24-23.19.56:175][183]LogModuleManager: Shutting down and abandoning module PhysXVehicles (264)
-[2017.11.24-23.19.56:176][183]LogModuleManager: Shutting down and abandoning module OculusEditor (262)
-[2017.11.24-23.19.56:176][183]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (260)
-[2017.11.24-23.19.56:176][183]LogModuleManager: Shutting down and abandoning module ImmediatePhysicsEditor (258)
-[2017.11.24-23.19.56:176][183]LogModuleManager: Shutting down and abandoning module ImmediatePhysics (256)
-[2017.11.24-23.19.56:176][183]LogModuleManager: Shutting down and abandoning module UdpMessaging (254)
-[2017.11.24-23.19.56:277][183]LogModuleManager: Shutting down and abandoning module TcpMessaging (252)
-[2017.11.24-23.19.56:378][183]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (250)
-[2017.11.24-23.19.56:378][183]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (248)
-[2017.11.24-23.19.56:378][183]LogModuleManager: Shutting down and abandoning module FacialAnimation (246)
-[2017.11.24-23.19.56:378][183]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (244)
-[2017.11.24-23.19.56:378][183]LogModuleManager: Shutting down and abandoning module GraphEditor (243)
-[2017.11.24-23.19.56:378][183]LogModuleManager: Shutting down and abandoning module ContentBrowser (241)
-[2017.11.24-23.19.56:381][183]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (238)
-[2017.11.24-23.19.56:381][183]LogModuleManager: Shutting down and abandoning module Paper2D (236)
-[2017.11.24-23.19.56:381][183]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (234)
-[2017.11.24-23.19.56:381][183]LogModuleManager: Shutting down and abandoning module WmfMedia (232)
-[2017.11.24-23.19.56:381][183]LogModuleManager: Shutting down and abandoning module ImgMedia (230)
-[2017.11.24-23.19.56:381][183]LogModuleManager: Shutting down and abandoning module PacketHandler (228)
-[2017.11.24-23.19.56:381][183]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (226)
-[2017.11.24-23.19.56:382][183]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntime (224)
-[2017.11.24-23.19.56:382][183]LogModuleManager: Shutting down and abandoning module MediaAssets (222)
-[2017.11.24-23.19.56:382][183]LogModuleManager: Shutting down and abandoning module Media (221)
-[2017.11.24-23.19.56:389][183]LogModuleManager: Shutting down and abandoning module Overlay (218)
-[2017.11.24-23.19.56:389][183]LogModuleManager: Shutting down and abandoning module OverlayEditor (217)
-[2017.11.24-23.19.56:390][183]LogModuleManager: Shutting down and abandoning module VREditor (214)
-[2017.11.24-23.19.56:390][183]LogModuleManager: Shutting down and abandoning module StringTableEditor (212)
-[2017.11.24-23.19.56:390][183]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (210)
-[2017.11.24-23.19.56:390][183]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (208)
-[2017.11.24-23.19.56:390][183]LogModuleManager: Shutting down and abandoning module FunctionalTesting (206)
-[2017.11.24-23.19.56:390][183]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (204)
-[2017.11.24-23.19.56:390][183]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (203)
-[2017.11.24-23.19.56:390][183]LogModuleManager: Shutting down and abandoning module UMG (200)
-[2017.11.24-23.19.56:390][183]LogModuleManager: Shutting down and abandoning module UMGEditor (199)
-[2017.11.24-23.19.56:390][183]LogModuleManager: Shutting down and abandoning module Sequencer (198)
-[2017.11.24-23.19.56:391][183]LogModuleManager: Shutting down and abandoning module MessageLog (195)
-[2017.11.24-23.19.56:391][183]LogModuleManager: Shutting down and abandoning module SlateReflector (190)
-[2017.11.24-23.19.56:391][183]LogModuleManager: Shutting down and abandoning module Slate (188)
-[2017.11.24-23.19.56:391][183]LogModuleManager: Shutting down and abandoning module EditorStyle (186)
-[2017.11.24-23.19.56:397][183]LogModuleManager: Shutting down and abandoning module MRMesh (184)
-[2017.11.24-23.19.56:397][183]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (182)
-[2017.11.24-23.19.56:397][183]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (180)
-[2017.11.24-23.19.56:397][183]LogModuleManager: Shutting down and abandoning module XAudio2 (178)
-[2017.11.24-23.19.56:397][183]LogModuleManager: Shutting down and abandoning module Networking (176)
-[2017.11.24-23.19.56:397][183]LogModuleManager: Shutting down and abandoning module Core (172)
-[2017.11.24-23.19.56:397][183]LogModuleManager: Shutting down and abandoning module LevelSequence (168)
-[2017.11.24-23.19.56:397][183]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (166)
-[2017.11.24-23.19.56:398][183]LogModuleManager: Shutting down and abandoning module KismetCompiler (164)
-[2017.11.24-23.19.56:398][183]LogModuleManager: Shutting down and abandoning module MeshUtilities (162)
-[2017.11.24-23.19.56:398][183]LogModuleManager: Shutting down and abandoning module MeshMergeUtilities (161)
-[2017.11.24-23.19.56:398][183]LogModuleManager: Shutting down and abandoning module MeshReductionInterface (160)
-[2017.11.24-23.19.56:398][183]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (159)
-[2017.11.24-23.19.56:398][183]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (157)
-[2017.11.24-23.19.56:398][183]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (155)
-[2017.11.24-23.19.56:398][183]LogModuleManager: Shutting down and abandoning module MaterialBaking (151)
-[2017.11.24-23.19.56:398][183]LogModuleManager: Shutting down and abandoning module DerivedDataCache (148)
-[2017.11.24-23.19.56:524][183]LogDerivedDataCache: Shutdown
-[2017.11.24-23.19.56:524][183]LogModuleManager: Shutting down and abandoning module TargetPlatform (146)
-[2017.11.24-23.19.56:524][183]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (145)
-[2017.11.24-23.19.56:524][183]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (143)
-[2017.11.24-23.19.56:524][183]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (141)
-[2017.11.24-23.19.56:524][183]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (139)
-[2017.11.24-23.19.56:524][183]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (137)
-[2017.11.24-23.19.56:524][183]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (135)
-[2017.11.24-23.19.56:524][183]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (133)
-[2017.11.24-23.19.56:524][183]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (131)
-[2017.11.24-23.19.56:524][183]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (129)
-[2017.11.24-23.19.56:524][183]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (127)
-[2017.11.24-23.19.56:524][183]LogModuleManager: Shutting down and abandoning module ImageWrapper (126)
-[2017.11.24-23.19.56:524][183]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (123)
-[2017.11.24-23.19.56:524][183]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (121)
-[2017.11.24-23.19.56:524][183]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (119)
-[2017.11.24-23.19.56:524][183]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (117)
-[2017.11.24-23.19.56:524][183]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (115)
-[2017.11.24-23.19.56:524][183]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (113)
-[2017.11.24-23.19.56:524][183]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (111)
-[2017.11.24-23.19.56:524][183]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (109)
-[2017.11.24-23.19.56:524][183]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (107)
-[2017.11.24-23.19.56:525][183]LogModuleManager: Shutting down and abandoning module Messaging (105)
-[2017.11.24-23.19.56:525][183]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (103)
-[2017.11.24-23.19.56:525][183]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (101)
-[2017.11.24-23.19.56:525][183]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (99)
-[2017.11.24-23.19.56:525][183]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (97)
-[2017.11.24-23.19.56:525][183]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (95)
-[2017.11.24-23.19.56:525][183]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (93)
-[2017.11.24-23.19.56:525][183]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (91)
-[2017.11.24-23.19.56:525][183]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (89)
-[2017.11.24-23.19.56:525][183]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (87)
-[2017.11.24-23.19.56:525][183]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (85)
-[2017.11.24-23.19.56:525][183]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (83)
-[2017.11.24-23.19.56:525][183]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (81)
-[2017.11.24-23.19.56:525][183]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (79)
-[2017.11.24-23.19.56:525][183]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (77)
-[2017.11.24-23.19.56:525][183]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (75)
-[2017.11.24-23.19.56:525][183]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (73)
-[2017.11.24-23.19.56:525][183]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (71)
-[2017.11.24-23.19.56:525][183]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (69)
-[2017.11.24-23.19.56:525][183]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (67)
-[2017.11.24-23.19.56:525][183]LogModuleManager: Shutting down and abandoning module InputCore (64)
-[2017.11.24-23.19.56:525][183]LogModuleManager: Shutting down and abandoning module Settings (62)
-[2017.11.24-23.19.56:525][183]LogModuleManager: Shutting down and abandoning module PhysXCooking (60)
-[2017.11.24-23.19.56:525][183]LogModuleManager: Shutting down and abandoning module SteamVR (58)
-[2017.11.24-23.19.56:525][183]LogModuleManager: Shutting down and abandoning module OculusHMD (56)
-[2017.11.24-23.19.56:525][183]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (54)
-[2017.11.24-23.19.56:525][183]LogModuleManager: Shutting down and abandoning module AppleARKit (52)
-[2017.11.24-23.19.56:525][183]LogModuleManager: Shutting down and abandoning module AugmentedReality (51)
-[2017.11.24-23.19.56:525][183]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (48)
-[2017.11.24-23.19.56:525][183]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (44)
-[2017.11.24-23.19.56:526][183]LogModuleManager: Shutting down and abandoning module XMPP (43)
-[2017.11.24-23.19.56:526][183]LogModuleManager: Shutting down and abandoning module HTTP (41)
-[2017.11.24-23.19.56:526][183]LogHttp: Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
-[2017.11.24-23.19.56:526][183]LogHttp: Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BA1A8D6F7-46D1-4BBA-6222-718E0DE4920E%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.18.1-3754814%2B%2B%2BUE4%2BRelease-4.18&UserID=20ad94af433a8b2f83436aa37551f73e%7C5715c249dca348219dfb2dce3242c8aa%7C4ccc3fba-4200-4b49-ae76-9384e9fd041c&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
-[2017.11.24-23.19.56:548][183]LogModuleManager: Shutting down and abandoning module SSL (40)
-[2017.11.24-23.19.56:549][183]LogModuleManager: Shutting down and abandoning module AnimationModifiers (36)
-[2017.11.24-23.19.56:549][183]LogModuleManager: Shutting down and abandoning module PropertyEditor (35)
-[2017.11.24-23.19.56:549][183]LogModuleManager: Shutting down and abandoning module AudioEditor (32)
-[2017.11.24-23.19.56:549][183]LogModuleManager: Shutting down and abandoning module TextureCompressor (30)
-[2017.11.24-23.19.56:549][183]LogModuleManager: Shutting down and abandoning module ShaderCore (28)
-[2017.11.24-23.19.56:550][183]LogModuleManager: Shutting down and abandoning module Landscape (26)
-[2017.11.24-23.19.56:550][183]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (24)
-[2017.11.24-23.19.56:550][183]LogModuleManager: Shutting down and abandoning module OpenGLDrv (22)
-[2017.11.24-23.19.56:550][183]LogModuleManager: Shutting down and abandoning module D3D11RHI (20)
-[2017.11.24-23.19.56:550][183]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (18)
-[2017.11.24-23.19.56:550][183]LogModuleManager: Shutting down and abandoning module Renderer (16)
-[2017.11.24-23.19.56:550][183]LogModuleManager: Shutting down and abandoning module Engine (14)
-[2017.11.24-23.19.56:550][183]LogModuleManager: Shutting down and abandoning module CoreUObject (12)
-[2017.11.24-23.19.56:550][183]LogModuleManager: Shutting down and abandoning module NetworkFile (10)
-[2017.11.24-23.19.56:550][183]LogModuleManager: Shutting down and abandoning module CookedIterativeFile (8)
-[2017.11.24-23.19.56:550][183]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
-[2017.11.24-23.19.56:550][183]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
-[2017.11.24-23.19.56:550][183]LogModuleManager: Shutting down and abandoning module PakFile (2)
-[2017.11.24-23.19.56:554][183]LogExit: Exiting.
-[2017.11.24-23.19.56:562][183]Log file closed, 11/25/17 00:19:56
+[2017.11.25-10.28.38:194][  0]LogInit: Selected Device Profile: [Windows]
+[2017.11.25-10.28.38:194][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.11.25-10.28.38:207][  0]LogInit: Computer: DESKTOP-DOUD4N2
+[2017.11.25-10.28.38:207][  0]LogInit: User: Anna
+[2017.11.25-10.28.38:207][  0]LogInit: CPU Page size=4096, Cores=4
+[2017.11.25-10.28.38:208][  0]LogInit: High frequency timer resolution =3.312808 MHz
+[2017.11.25-10.28.38:208][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2017.11.25-10.28.38:208][  0]LogMemory: Platform Memory Stats for Windows
+[2017.11.25-10.28.38:208][  0]LogMemory: Process Physical Memory: 273.77 MB used, 273.77 MB peak
+[2017.11.25-10.28.38:208][  0]LogMemory: Process Virtual Memory: 270.77 MB used, 270.77 MB peak
+[2017.11.25-10.28.38:208][  0]LogMemory: Physical Memory: 4593.89 MB used,  11729.57 MB free, 16323.47 MB total
+[2017.11.25-10.28.38:208][  0]LogMemory: Virtual Memory: 635.89 MB used,  11729.57 MB free, 134217728.00 MB total
+[2017.11.25-10.28.38:419][  0]LogInit: Using OS detected language (de-DE).
+[2017.11.25-10.28.38:419][  0]LogInit: Using OS detected locale (de-DE).
+[2017.11.25-10.28.38:422][  0]LogTextLocalizationManager: No localization for 'de-DE' exists, so 'en' will be used for the language.
+[2017.11.25-10.28.38:423][  0]LogTextLocalizationManager: No localization for 'de-DE' exists, so 'en' will be used for the locale.
+[2017.11.25-10.28.38:823][  0]LogInit: Setting process to per monitor DPI aware
+[2017.11.25-10.28.39:185][  0]LogD3D11RHI: D3D11 adapters:
+[2017.11.25-10.28.39:209][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 660' (Feature Level 11_0)
+[2017.11.25-10.28.39:209][  0]LogD3D11RHI:       1506/0/8161 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2017.11.25-10.28.39:210][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.11.25-10.28.39:210][  0]LogD3D11RHI:       0/0/8161 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.11.25-10.28.39:210][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.11.25-10.28.39:216][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.11.25-10.28.39:217][  0]LogD3D11RHI:     GPU DeviceId: 0x1185 (for the marketing name, search the web for "GPU Device Id")
+[2017.11.25-10.28.39:217][  0]LogWindows: EnumDisplayDevices:
+[2017.11.25-10.28.39:217][  0]LogWindows:    0. 'NVIDIA GeForce GTX 660' (P:1 D:1)
+[2017.11.25-10.28.39:217][  0]LogWindows:    1. 'NVIDIA GeForce GTX 660' (P:0 D:1)
+[2017.11.25-10.28.39:217][  0]LogWindows:    2. 'NVIDIA GeForce GTX 660' (P:0 D:0)
+[2017.11.25-10.28.39:218][  0]LogWindows:    3. 'NVIDIA GeForce GTX 660' (P:0 D:0)
+[2017.11.25-10.28.39:218][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2017.11.25-10.28.39:218][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 660
+[2017.11.25-10.28.39:218][  0]LogD3D11RHI:   Driver Version: 376.54 (internal:21.21.13.7654, unified:376.54)
+[2017.11.25-10.28.39:218][  0]LogD3D11RHI:      Driver Date: 12-29-2016
+[2017.11.25-10.28.39:218][  0]LogRHI: Texture pool is 1054 MB (70% of 1506 MB)
+[2017.11.25-10.28.39:237][  0]LogD3D11RHI: Async texture creation enabled
+[2017.11.25-10.28.39:255][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2017.11.25-10.28.39:355][  0]LogShaderCompilers: Guid format shader working directory is -38 characters bigger than the processId version (../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Intermediate/Shaders/WorkingDirectory/236/).
+[2017.11.25-10.28.39:355][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Anna/AppData/Local/Temp/UnrealShaderWorkingDir/7A69967F4DC0E40536B0A381EAC8E902/'.
+[2017.11.25-10.28.39:355][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2017.11.25-10.28.40:466][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
+[2017.11.25-10.28.40:537][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
+[2017.11.25-10.28.40:607][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
+[2017.11.25-10.28.40:676][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
+[2017.11.25-10.28.40:748][  0]LogTemp: Display: Loaded TP MacTargetPlatform
+[2017.11.25-10.28.40:818][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
+[2017.11.25-10.28.40:890][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.11.25-10.28.40:959][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
+[2017.11.25-10.28.41:022][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
+[2017.11.25-10.28.41:090][  0]LogTemp: Display: Loaded TP Android_ASTCTargetPlatform
+[2017.11.25-10.28.41:158][  0]LogTemp: Display: Loaded TP Android_ATCTargetPlatform
+[2017.11.25-10.28.41:225][  0]LogTemp: Display: Loaded TP Android_DXTTargetPlatform
+[2017.11.25-10.28.41:293][  0]LogTemp: Display: Loaded TP Android_ETC1TargetPlatform
+[2017.11.25-10.28.41:361][  0]LogTemp: Display: Loaded TP Android_ETC2TargetPlatform
+[2017.11.25-10.28.41:498][  0]LogTemp: Display: Loaded TP Android_MultiTargetPlatform
+[2017.11.25-10.28.41:498][  0]LogTemp: Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.11.25-10.28.41:567][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2017.11.25-10.28.41:622][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
+[2017.11.25-10.28.41:736][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2017.11.25-10.28.41:772][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2017.11.25-10.28.41:840][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
+[2017.11.25-10.28.41:907][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.11.25-10.28.41:975][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
+[2017.11.25-10.28.42:043][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
+[2017.11.25-10.28.42:043][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2017.11.25-10.28.42:682][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2017.11.25-10.28.42:770][  0]LogDerivedDataCache: Loaded boot cache 0.09s 78MB C:/Users/Anna/AppData/Local/UnrealEngine/4.18/DerivedDataCache/Boot.ddc.
+[2017.11.25-10.28.42:770][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Anna/AppData/Local/UnrealEngine/4.18/DerivedDataCache/Boot.ddc
+[2017.11.25-10.28.42:770][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.11.25-10.28.42:770][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.11.25-10.28.42:770][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.11.25-10.28.42:770][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.11.25-10.28.42:786][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.11.25-10.28.42:798][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Anna/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.11.25-10.28.42:810][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2017.11.25-10.28.42:811][  0]LogSlate: Using Freetype 2.6.0
+[2017.11.25-10.28.42:811][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.11.25-10.28.42:811][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.11.25-10.28.43:269][  0]LogInit: Selected Device Profile: [Windows]
+[2017.11.25-10.28.43:696][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.11.25-10.28.43:752][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.11.25-10.28.43:752][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.11.25-10.28.43:752][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
+[2017.11.25-10.28.43:752][  0]LogMeshReduction: No automatic mesh merging module available
+[2017.11.25-10.28.43:752][  0]LogMeshMerging: No automatic mesh merging module available
+[2017.11.25-10.28.43:786][  0]LogNetVersion: TwinStickShooter , NetCL: 3709383, EngineNetVer: 2, GameNetVer: 0 (Checksum: 4163484994)
+[2017.11.25-10.28.43:985][  0]LogAssetRegistry: FAssetRegistry took 0.0271 seconds to start up
+[2017.11.25-10.28.44:569][  0]LogPackageLocalizationCache: Processed 7 localized package path(s) for 1 prioritized culture(s) in 0.040546 seconds
+[2017.11.25-10.28.44:575][  0]LogUObjectArray: 35900 objects as part of root set at end of initial load.
+[2017.11.25-10.28.44:575][  0]LogUObjectAllocator: 7372016 out of 0 bytes used by permanent object pool.
+[2017.11.25-10.28.44:575][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.11.25-10.28.44:649][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.11.25-10.28.47:638][  0]LogWmfMedia: Failed to load mf.dll
+[2017.11.25-10.28.47:638][  0]LogWmfMedia: Failed to load required Windows Media Foundation libraries
+[2017.11.25-10.28.47:725][  0]LogWindowsMoviePlayer: Could not load mf.dll. Library not found.
+[2017.11.25-10.28.47:725][  0]LogWindowsMoviePlayer: Could not load mfplat.dll. Library not found.
+[2017.11.25-10.28.47:725][  0]LogWindowsMoviePlayer: Could not load mfplay.dll. Library not found.
+[2017.11.25-10.28.48:372][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.11.25-10.28.48:423][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.11.25-10.28.49:410][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.11.25-10.28.49:966][  0]SourceControl: Source control is disabled
+[2017.11.25-10.28.49:966][  0]SourceControl: Source control is disabled
+[2017.11.25-10.28.50:038][  0]SourceControl: Source control is disabled
+[2017.11.25-10.28.50:108][  0]SourceControl: Source control is disabled
+[2017.11.25-10.28.51:187][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2017.11.25-10.28.51:558][  0]LogOcInput: OculusInput pre-init called
+[2017.11.25-10.28.52:038][  0]LogEngine: Initializing Engine...
+[2017.11.25-10.28.52:041][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2017.11.25-10.28.52:276][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.11.25-10.28.52:276][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.11.25-10.28.52:449][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.11.25-10.28.52:459][  0]LogInit: XAudio2 using 'Lautsprecher (High Definition Audio-Gerät)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.11.25-10.28.52:472][  0]LogInit: FAudioDevice initialized.
+[2017.11.25-10.28.52:555][  0]LogDerivedDataCache: Saved boot cache 0.08s 78MB C:/Users/Anna/AppData/Local/UnrealEngine/4.18/DerivedDataCache/Boot.ddc.
+[2017.11.25-10.28.52:570][  0]LogInit: Texture streaming: Enabled
+[2017.11.25-10.28.52:752][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2017.11.25-10.28.52:969][  0]LogInit: Transaction tracking system initialized
+[2017.11.25-10.28.53:392][  0]BlueprintLog: New page: Editor Load
+[2017.11.25-10.28.54:645][  0]LocalizationService: Localization service is disabled
+[2017.11.25-10.28.55:745][  0]LogConsoleResponse: Display: 
+[2017.11.25-10.28.55:941][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.11.25-10.28.55:941][  0]LogCook: Display: Mobile HDR setting 1
+[2017.11.25-10.28.55:942][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
+[2017.11.25-10.28.56:617][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Content/' took 0.01s
+[2017.11.25-10.28.57:532][  0]SourceControl: Source control is disabled
+[2017.11.25-10.28.57:532][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.11.25-10.28.57:533][  0]LightingResults: New page: Lighting Build
+[2017.11.25-10.28.57:615][  0]MapCheck: New page: Map Check
+[2017.11.25-10.28.57:615][  0]LightingResults: New page: Lighting Build
+[2017.11.25-10.28.58:262][  0]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2017.11.25-10.28.59:012][  0]LogStats: FPlatformStackWalk::StackWalkAndDump -  0.728 s
+[2017.11.25-10.28.59:012][  0]LogOutputDevice: Error: === Handled ensure: ===
+[2017.11.25-10.28.59:012][  0]LogOutputDevice: Error: 
+[2017.11.25-10.28.59:012][  0]LogOutputDevice: Error: Ensure condition failed: &Owner == GetOwner() [File:D:\Build\++UE4+Release-4.18+Compile\Sync\Engine\Source\Runtime\Engine\Private\Components\NavMovementComponent.cpp] [Line: 85]
+[2017.11.25-10.28.59:012][  0]LogOutputDevice: Error: 
+[2017.11.25-10.28.59:012][  0]LogOutputDevice: Error: Stack: 
+[2017.11.25-10.28.59:012][  0]LogOutputDevice: Error: [Callstack] 0x00000000EF572786 UE4Editor-Core.dll!UnknownFunction []
+[2017.11.25-10.28.59:012][  0]LogOutputDevice: Error: [Callstack] 0x00000000EF31123A UE4Editor-Core.dll!UnknownFunction []
+[2017.11.25-10.28.59:012][  0]LogOutputDevice: Error: [Callstack] 0x00000000EF32B906 UE4Editor-Core.dll!UnknownFunction []
+[2017.11.25-10.28.59:012][  0]LogOutputDevice: Error: [Callstack] 0x00000000E070F2EF UE4Editor-Engine.dll!UnknownFunction []
+[2017.11.25-10.28.59:012][  0]LogOutputDevice: Error: [Callstack] 0x00000000E0E8B73B UE4Editor-Engine.dll!UnknownFunction []
+[2017.11.25-10.28.59:012][  0]LogOutputDevice: Error: [Callstack] 0x00000000E02413C2 UE4Editor-Engine.dll!UnknownFunction []
+[2017.11.25-10.28.59:012][  0]LogOutputDevice: Error: [Callstack] 0x00000000E02502F0 UE4Editor-Engine.dll!UnknownFunction []
+[2017.11.25-10.28.59:012][  0]LogOutputDevice: Error: [Callstack] 0x00000000E024DABC UE4Editor-Engine.dll!UnknownFunction []
+[2017.11.25-10.28.59:012][  0]LogOutputDevice: Error: [Callstack] 0x00000000E0AF6777 UE4Editor-Engine.dll!UnknownFunction []
+[2017.11.25-10.28.59:012][  0]LogOutputDevice: Error: [Callstack] 0x00000000E0AF6B57 UE4Editor-Engine.dll!UnknownFunction []
+[2017.11.25-10.28.59:012][  0]LogOutputDevice: Error: [Callstack] 0x00000000E06CE887 UE4Editor-Engine.dll!UnknownFunction []
+[2017.11.25-10.28.59:012][  0]LogOutputDevice: Error: [Callstack] 0x00000000E06404E3 UE4Editor-Engine.dll!UnknownFunction []
+[2017.11.25-10.28.59:012][  0]LogOutputDevice: Error: [Callstack] 0x00000000E0661C29 UE4Editor-Engine.dll!UnknownFunction []
+[2017.11.25-10.28.59:012][  0]LogOutputDevice: Error: [Callstack] 0x00000000E02412CB UE4Editor-Engine.dll!UnknownFunction []
+[2017.11.25-10.28.59:012][  0]LogOutputDevice: Error: [Callstack] 0x00000000E0AD33CE UE4Editor-Engine.dll!UnknownFunction []
+[2017.11.25-10.28.59:012][  0]LogOutputDevice: Error: [Callstack] 0x00000000E142F807 UE4Editor-Engine.dll!UnknownFunction []
+[2017.11.25-10.28.59:012][  0]LogOutputDevice: Error: [Callstack] 0x00000000EB281A84 UE4Editor-UnrealEd.dll!UnknownFunction []
+[2017.11.25-10.28.59:012][  0]LogOutputDevice: Error: [Callstack] 0x00000000EB272E35 UE4Editor-UnrealEd.dll!UnknownFunction []
+[2017.11.25-10.28.59:012][  0]LogOutputDevice: Error: [Callstack] 0x00000000EB257872 UE4Editor-UnrealEd.dll!UnknownFunction []
+[2017.11.25-10.28.59:012][  0]LogOutputDevice: Error: [Callstack] 0x00000000EBAEB929 UE4Editor-UnrealEd.dll!UnknownFunction []
+[2017.11.25-10.28.59:012][  0]LogOutputDevice: Error: [Callstack] 0x00000000EB56257B UE4Editor-UnrealEd.dll!UnknownFunction []
+[2017.11.25-10.28.59:012][  0]LogOutputDevice: Error: [Callstack] 0x00000000EB5621CF UE4Editor-UnrealEd.dll!UnknownFunction []
+[2017.11.25-10.28.59:012][  0]LogOutputDevice: Error: [Callstack] 0x00000000EBAA46CE UE4Editor-UnrealEd.dll!UnknownFunction []
+[2017.11.25-10.28.59:012][  0]LogOutputDevice: Error: [Callstack] 0x00000000EBA6868D UE4Editor-UnrealEd.dll!UnknownFunction []
+[2017.11.25-10.28.59:012][  0]LogOutputDevice: Error: [Callstack] 0x00000000DB4A5326 UE4Editor.exe!UnknownFunction []
+[2017.11.25-10.28.59:012][  0]LogOutputDevice: Error: [Callstack] 0x00000000DB4A54AA UE4Editor.exe!UnknownFunction []
+[2017.11.25-10.28.59:012][  0]LogOutputDevice: Error: [Callstack] 0x00000000DB4B2379 UE4Editor.exe!UnknownFunction []
+[2017.11.25-10.28.59:012][  0]LogOutputDevice: Error: [Callstack] 0x00000000DB4B3D57 UE4Editor.exe!UnknownFunction []
+[2017.11.25-10.28.59:012][  0]LogOutputDevice: Error: [Callstack] 0x000000001DC32774 KERNEL32.DLL!UnknownFunction []
+[2017.11.25-10.28.59:012][  0]LogOutputDevice: Error: [Callstack] 0x000000001E660D51 ntdll.dll!UnknownFunction []
+[2017.11.25-10.28.59:012][  0]LogOutputDevice: Error: 
+[2017.11.25-10.28.59:017][  0]LogStats:                SubmitErrorReport -  0.000 s
+[2017.11.25-10.28.59:717][  0]LogStats:                    SendNewReport -  0.700 s
+[2017.11.25-10.28.59:717][  0]LogStats:             FDebug::EnsureFailed -  1.433 s
+[2017.11.25-10.28.59:729][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.11.25-10.28.59:744][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.11.25-10.28.59:817][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 73.227ms to complete.
+[2017.11.25-10.28.59:817][  0]LogFileHelpers: Loading map 'ThirdPersonExampleMap' took 2.285
+[2017.11.25-10.29.00:003][  0]LogCollectionManager: Loaded 0 collections in 0.002032 seconds
+[2017.11.25-10.29.00:119][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Saved/Collections/' took 0.01s
+[2017.11.25-10.29.00:119][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Content/Developers/Anna/Collections/' took 0.01s
+[2017.11.25-10.29.00:119][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Content/Collections/' took 0.01s
+[2017.11.25-10.29.00:119][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000000 seconds
+[2017.11.25-10.29.00:131][  0]LogContentBrowser: Native class hierarchy populated in 0.0099 seconds. Added 2363 classes and 519 folders.
+[2017.11.25-10.29.00:225][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2017.11.25-10.29.00:344][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2017.11.25-10.29.00:425][  0]LogContentBrowser: Native class hierarchy updated for 'WorldBrowser' in 0.0003 seconds. Added 2 classes and 3 folders.
+[2017.11.25-10.29.00:505][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0003 seconds. Added 1 classes and 2 folders.
+[2017.11.25-10.29.00:552][  0]LogSlate: Took 0.000295 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.11.25-10.29.00:556][  0]LogSlate: Took 0.000277 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2017.11.25-10.29.00:781][  0]LogRenderer: Reallocating scene render targets to support 1208x576 Format 10 NumSamples 1 (Frame:1).
+[2017.11.25-10.29.00:982][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0003 seconds. Added 1 classes and 2 folders.
+[2017.11.25-10.29.00:982][  0]LogLoad: (Engine Initialization) Total time: 25.79 seconds
+[2017.11.25-10.29.00:982][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2017.11.25-10.29.00:982][  0]LogExternalProfiler: No external profilers were discovered.  External profiling features will not be available.
+[2017.11.25-10.29.01:347][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.11.25-10.29.02:002][  2]LogAssetRegistry: Asset discovery search completed in 18.0393 seconds
+[2017.11.25-10.29.02:005][  2]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2017.11.25-10.29.02:005][  2]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000074 seconds (updated 0 objects)
+[2017.11.25-10.29.53:681][412]LogSlate: Took 0.001268 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2017.11.25-10.29.53:694][412]LogSlate: Took 0.001364 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.11.25-10.29.59:638][120]LogSlate: Took 0.000168 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.11.25-10.29.59:650][120]LogAIModule: Creating AISystem for world 0_Persistent
+[2017.11.25-10.29.59:665][120]Cmd: MAP LOAD FILE="../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Content/Maps/0_Persistent.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.11.25-10.29.59:665][120]LightingResults: New page: Lighting Build
+[2017.11.25-10.29.59:666][120]LoadErrors: New page: Loading map: 0_Persistent.umap
+[2017.11.25-10.29.59:668][120]MapCheck: New page: Map Check
+[2017.11.25-10.29.59:668][120]LightingResults: New page: Lighting Build
+[2017.11.25-10.29.59:678][120]LogStreaming: Display: ULevelStreaming::RequestLevel(/Game/Maps/1_Gameplay) is flushing async loading
+[2017.11.25-10.29.59:682][120]LogStreaming: Display: ULevelStreaming::RequestLevel(/Game/Maps/2_LevelDesign) is flushing async loading
+[2017.11.25-10.29.59:715][120]LogStreaming: Display: ULevelStreaming::RequestLevel(/Game/Maps/3_Lighting) is flushing async loading
+[2017.11.25-10.29.59:720][120]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.11.25-10.29.59:755][120]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.11.25-10.29.59:833][120]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 77.878ms to complete.
+[2017.11.25-10.29.59:833][120]LogFileHelpers: Loading map '0_Persistent' took 0.169
+[2017.11.25-10.30.10:244][341]LogEditorViewport: Clicking on Actor (LMB): PointLight (PointLight5)
+[2017.11.25-10.30.33:943][783]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall15)
+[2017.11.25-10.30.45:687][976]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall15)
+[2017.11.25-10.30.55:889][ 68]LogEditorViewport: Clicking Background
+[2017.11.25-10.30.56:525][143]LogEditorViewport: Clicking on Actor (LMB): Brush (Floor)
+[2017.11.25-10.30.57:993][309]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall15)
+[2017.11.25-10.31.20:122][738]LogEditorViewport: Clicking on Actor (LMB): Brush (Floor3)
+[2017.11.25-10.31.21:284][870]LogEditorViewport: Clicking Background
+[2017.11.25-10.31.22:643][ 31]LogEditorViewport: Clicking on Actor (LMB): Brush (Floor3)
+[2017.11.25-10.31.32:297][162]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall15)
+[2017.11.25-10.31.43:752][441]LogEditorViewport: Clicking on Actor (LMB): Brush (Floor3)
+[2017.11.25-10.31.51:502][324]LogSavePackage: Save=67.53ms
+[2017.11.25-10.31.51:502][324]LogSavePackage: Moving '../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Saved/2_LevelDesign38C336EE48550F89D121B4B646C047C5.tmp' to '../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Content/Maps/2_LevelDesign.umap'
+[2017.11.25-10.31.51:506][324]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Content/Maps/2_LevelDesign.umap
+[2017.11.25-10.31.51:572][324]LogSavePackage: Save=54.80ms
+[2017.11.25-10.31.51:572][324]LogSavePackage: Moving '../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Saved/2_LevelDesign_BuiltData861A3B0D44E3B7B4C8F8278E330BA485.tmp' to '../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Content/Maps/2_LevelDesign_BuiltData.uasset'
+[2017.11.25-10.31.51:575][324]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Content/Maps/2_LevelDesign_BuiltData.uasset
+[2017.11.25-10.31.58:447][111]LogEditorViewport: Clicking on Actor (LMB): PointLight (PointLight6)
+[2017.11.25-10.32.18:650][350]LogEditorViewport: Clicking Background
+[2017.11.25-10.32.19:022][392]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall15)
+[2017.11.25-10.32.20:224][523]Cmd: DELETE
+[2017.11.25-10.32.20:224][523]Cmd: ACTOR DELETE
+[2017.11.25-10.32.20:229][523]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.11.25-10.32.20:238][523]LogEditorActor: Deleted 1 Actors (0.012 secs)
+[2017.11.25-10.32.52:985][331]Cmd: BRUSH ADD SELECTNEWBRUSH
+[2017.11.25-10.33.14:294][812]LogEditorViewport: Clicking on Actor (LMB): Brush (Curved Stair Brush)
+[2017.11.25-10.33.15:198][914]Cmd: DELETE
+[2017.11.25-10.33.15:198][914]Cmd: ACTOR DELETE
+[2017.11.25-10.33.15:201][914]LogEditorActor: Deleted Actor: Brush
+[2017.11.25-10.33.15:212][914]LogEditorActor: Deleted 1 Actors (0.014 secs)
+[2017.11.25-10.33.17:126][137]Cmd: BRUSH ADD SELECTNEWBRUSH
+[2017.11.25-10.33.27:530][335]Cmd: DELETE
+[2017.11.25-10.33.27:530][335]Cmd: ACTOR DELETE
+[2017.11.25-10.33.27:533][335]LogEditorActor: Deleted Actor: Brush
+[2017.11.25-10.33.27:545][335]LogEditorActor: Deleted 1 Actors (0.015 secs)
+[2017.11.25-10.33.29:721][590]Cmd: BRUSH ADD SELECTNEWBRUSH
+[2017.11.25-10.33.36:809][422]Cmd: DELETE
+[2017.11.25-10.33.36:809][422]Cmd: ACTOR DELETE
+[2017.11.25-10.33.36:813][422]LogEditorActor: Deleted Actor: Brush
+[2017.11.25-10.33.36:824][422]LogEditorActor: Deleted 1 Actors (0.014 secs)
+[2017.11.25-10.33.40:505][853]Cmd: BRUSH ADD SELECTNEWBRUSH
+[2017.11.25-10.35.31:920][745]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Barrier7)
+[2017.11.25-10.35.35:687][173]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Barrier7)
+[2017.11.25-10.36.02:482][323]Cmd: DELETE
+[2017.11.25-10.36.02:482][323]Cmd: ACTOR DELETE
+[2017.11.25-10.36.02:487][323]LogEditorActor: Deleted Actor: Brush
+[2017.11.25-10.36.02:499][323]LogEditorActor: Deleted 1 Actors (0.017 secs)
+[2017.11.25-10.36.06:625][812]Cmd: BRUSH ADD SELECTNEWBRUSH
+[2017.11.25-10.40.07:258][976]Cmd: TRANSACTION UNDO
+[2017.11.25-10.40.07:258][976]LogEditorTransaction: Undo Move Actors
+[2017.11.25-10.40.07:262][976]LogActorComponent: ~FComponentReregisterContext: (/Game/Maps/2_LevelDesign.2_LevelDesign:PersistentLevel.HoleintheGround.BrushComponent0) Component already registered.
+[2017.11.25-10.40.07:300][976]LogSlate: Took 0.000259 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.11.25-10.41.05:730][870]LogSavePackage: Save=167.50ms
+[2017.11.25-10.41.05:730][870]LogSavePackage: Moving '../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Saved/2_LevelDesignF475D5E14C4F01CCBAE8629E7A6AB844.tmp' to '../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Content/Maps/2_LevelDesign.umap'
+[2017.11.25-10.41.05:735][870]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Content/Maps/2_LevelDesign.umap
+[2017.11.25-10.41.05:790][870]LogSavePackage: Save=44.87ms
+[2017.11.25-10.41.05:790][870]LogSavePackage: Moving '../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Saved/2_LevelDesign_BuiltData559C4FDD4E0E9BD9F3569E9A1B6B5A59.tmp' to '../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Content/Maps/2_LevelDesign_BuiltData.uasset'
+[2017.11.25-10.41.05:792][870]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Content/Maps/2_LevelDesign_BuiltData.uasset
+[2017.11.25-10.41.10:197][385]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall11)
+[2017.11.25-10.41.23:652][931]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall15)
+[2017.11.25-10.41.24:109][982]LogEditorViewport: Clicking on Actor (LMB): PointLight (PointLight6)
+[2017.11.25-10.41.32:574][951]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall15)
+[2017.11.25-10.41.36:306][376]LogEditorViewport: Clicking on Actor (LMB): PointLight (PointLight6)
+[2017.11.25-10.41.39:878][773]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall15)
+[2017.11.25-10.41.51:722][153]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
+[2017.11.25-10.42.14:012][776]LogEditorViewport: Clicking Background
+[2017.11.25-10.42.25:801][172]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall15)
+[2017.11.25-10.42.30:959][768]LogEditorViewport: Clicking on Actor (LMB): PointLight (PointLight6)
+[2017.11.25-10.42.39:276][715]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall15)
+[2017.11.25-10.43.16:044][ 57]LogSlate: Took 0.002955 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2017.11.25-10.43.22:013][731]LogEditorViewport: Clicking Background
+[2017.11.25-10.43.30:799][771]LogEditorViewport: Clicking on Actor (LMB): PointLight (PointLight6)
+[2017.11.25-10.43.46:443][547]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall15)
+[2017.11.25-10.44.53:939][455]LogEditorViewport: Clicking Background
+[2017.11.25-10.44.54:936][570]LogEditorViewport: Clicking Background
+[2017.11.25-10.44.55:280][611]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall17)
+[2017.11.25-10.45.01:736][366]LogEditorViewport: Clicking Background
+[2017.11.25-10.45.08:072][120]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall16)
+[2017.11.25-10.45.42:909][179]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall19)
+[2017.11.25-10.45.48:658][856]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall19)
+[2017.11.25-10.46.43:322][304]LogEditorViewport: Clicking on Actor (LMB): Brush (Floor3)
+[2017.11.25-10.46.44:433][432]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall21)
+[2017.11.25-10.47.21:581][750]LogSavePackage: Save=174.41ms
+[2017.11.25-10.47.21:581][750]LogSavePackage: Moving '../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Saved/2_LevelDesign9C896F1D4C48FFB1D017CCB0FEC5F376.tmp' to '../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Content/Maps/2_LevelDesign.umap'
+[2017.11.25-10.47.21:586][750]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Content/Maps/2_LevelDesign.umap
+[2017.11.25-10.47.21:640][750]LogSavePackage: Save=43.34ms
+[2017.11.25-10.47.21:640][750]LogSavePackage: Moving '../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Saved/2_LevelDesign_BuiltData6D376EE6483B38068738DC92A690A4E3.tmp' to '../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Content/Maps/2_LevelDesign_BuiltData.uasset'
+[2017.11.25-10.47.21:643][750]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Content/Maps/2_LevelDesign_BuiltData.uasset
+[2017.11.25-10.50.34:034][500]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall23)
+[2017.11.25-10.50.40:174][227]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall23)
+[2017.11.25-10.50.45:700][874]LogEditorViewport: Clicking on Actor (LMB): Brush (Hole in the Ground)
+[2017.11.25-10.50.46:291][940]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall23)
+[2017.11.25-10.50.50:130][386]LogEditorViewport: Clicking Background
+[2017.11.25-10.51.00:003][551]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall22)
+[2017.11.25-10.51.06:263][272]LogEditorViewport: Clicking on Actor (LMB): Brush (Floor)
+[2017.11.25-10.51.06:881][341]LogEditorViewport: Clicking Background
+[2017.11.25-10.51.07:457][409]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall20)
+[2017.11.25-10.51.27:312][667]LogEditorViewport: Clicking Background
+[2017.11.25-10.51.31:183][123]LogEditorViewport: Clicking Background
+[2017.11.25-10.51.31:829][200]LogEditorViewport: Clicking on Actor (LMB): Brush (Curved Stair Brush)
+[2017.11.25-10.51.32:731][303]LogEditorViewport: Clicking on Actor (LMB): Brush (Curved Stair Brush)
+[2017.11.25-10.51.33:163][350]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall23)
+[2017.11.25-10.51.33:429][375]LogEditorViewport: Clicking Background
+[2017.11.25-10.51.33:963][438]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall23)
+[2017.11.25-10.51.35:190][578]LogEditorViewport: Clicking on Actor (LMB): Brush (Hole in the Ground)
+[2017.11.25-10.51.36:196][693]LogEditorViewport: Clicking on Actor (LMB): Brush (Curved Stair Brush)
+[2017.11.25-10.51.37:467][839]LogEditorViewport: Clicking Background
+[2017.11.25-10.52.24:218][209]LogEditorViewport: Clicking on Actor (LMB): Brush (Floor3)
+[2017.11.25-10.52.25:514][359]LogEditorViewport: Clicking Background
+[2017.11.25-10.52.27:599][603]LogEditorViewport: Clicking Background
+[2017.11.25-10.52.28:179][671]LogEditorViewport: Clicking Background
+[2017.11.25-10.52.28:541][714]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall20)
+[2017.11.25-10.52.53:993][634]LogSavePackage: Save=175.49ms
+[2017.11.25-10.52.53:993][634]LogSavePackage: Moving '../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Saved/2_LevelDesign655C0AC34D6D14EC32C080837749C36F.tmp' to '../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Content/Maps/2_LevelDesign.umap'
+[2017.11.25-10.52.53:998][634]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Content/Maps/2_LevelDesign.umap
+[2017.11.25-10.52.54:055][634]LogSavePackage: Save=43.72ms
+[2017.11.25-10.52.54:055][634]LogSavePackage: Moving '../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Saved/2_LevelDesign_BuiltData9E1980664EA814315C1A3FB4EF41BD02.tmp' to '../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Content/Maps/2_LevelDesign_BuiltData.uasset'
+[2017.11.25-10.52.54:057][634]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Content/Maps/2_LevelDesign_BuiltData.uasset
+[2017.11.25-10.52.57:936][ 71]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall22)
+[2017.11.25-10.52.58:945][175]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall22)
+[2017.11.25-10.53.10:979][559]LogEditorViewport: Clicking on Actor (LMB): Brush (Hole in the Ground)
+[2017.11.25-10.53.11:567][624]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall23)
+[2017.11.25-10.53.19:908][600]LogEditorViewport: Clicking Background
+[2017.11.25-10.53.20:963][721]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall24)
+[2017.11.25-10.53.39:429][858]LogEditorViewport: Clicking on Actor (LMB): PointLight (PointLight5)
+[2017.11.25-10.53.43:073][263]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall24)
+[2017.11.25-10.54.55:546][649]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall19)
+[2017.11.25-10.54.57:363][847]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall19)
+[2017.11.25-10.55.18:352][283]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall25)
+[2017.11.25-10.55.30:464][545]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall25)
+[2017.11.25-10.55.44:778][215]Cmd: DELETE
+[2017.11.25-10.55.44:778][215]Cmd: ACTOR DELETE
+[2017.11.25-10.55.44:786][215]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.11.25-10.55.44:795][215]LogEditorActor: Deleted 1 Actors (0.017 secs)
+[2017.11.25-10.55.50:620][910]LogEditorViewport: Clicking on Actor (LMB): PointLight (PointLight5)
+[2017.11.25-10.55.51:474][  4]Cmd: DELETE
+[2017.11.25-10.55.51:474][  4]Cmd: ACTOR DELETE
+[2017.11.25-10.55.51:481][  4]LogEditorActor: Deleted Actor: PointLight
+[2017.11.25-10.55.51:491][  4]LogEditorActor: Deleted 1 Actors (0.017 secs)
+[2017.11.25-10.56.25:637][ 47]LogWindows: LaunchURL http://docs.unrealengine.com/latest/INT/index.html?utm_source=editor&utm_medium=docs&utm_campaign=help_menu
+[2017.11.25-10.56.39:847][680]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall20)
+[2017.11.25-10.56.41:540][872]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall18)
+[2017.11.25-10.56.59:120][887]Cmd: CAMERA ALIGN
+[2017.11.25-10.57.17:346][920]MapCheck: New page: Map Check
+[2017.11.25-10.57.17:361][920]Cmd: MAP REBUILD ALLVISIBLE
+[2017.11.25-10.57.17:366][920]LogEditorServer: Rebuildmap Clear paths rebuilt
+[2017.11.25-10.57.17:405][920]LightingResults: New page: Lighting Build - Nov 25, 2017, 12:57:17 PM
+[2017.11.25-10.57.17:458][920]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
+[2017.11.25-10.57.17:509][920]LogSwarmInterface: [OpenConnection] Connecting to agent ...
+[2017.11.25-10.57.17:587][920]LogSwarmInterface: [TryOpenConnection] Testing the Agent
+[2017.11.25-10.57.18:105][920]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
+[2017.11.25-10.57.18:106][920]LogSwarmInterface: [TryOpenConnection] Local Process ID is 236
+[2017.11.25-10.57.20:769][920]LogStaticLightingSystem: Warning: No importance volume found, so the scene bounding box was used.  You can optimize your scene's quality and lighting build times by adding importance volumes.
+[2017.11.25-10.57.20:769][920]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
+[2017.11.25-10.57.20:769][920]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
+[2017.11.25-10.57.20:769][920]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
+[2017.11.25-10.57.20:769][920]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
+[2017.11.25-10.57.20:769][920]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
+[2017.11.25-10.57.21:038][920]LogEditorBuildUtils: Build time 0:03
+[2017.11.25-10.57.23:196][ 15]Job is a success!
+[2017.11.25-10.57.23:256][ 16]LogVolumetricLightmapImport: Imported Volumetric Lightmap in 0.010s
+[2017.11.25-10.57.23:256][ 16]LogVolumetricLightmapImport:      Indirection Texture 16x16x16 = 0.0Mb
+[2017.11.25-10.57.23:256][ 16]LogVolumetricLightmapImport:      BrickData 95x5x5 = 0.1Mb
+[2017.11.25-10.57.23:256][ 16]LogVolumetricLightmapImport:      Bricks at Level
+[2017.11.25-10.57.23:256][ 16]LogVolumetricLightmapImport:          0: 5.3% covering 100.0% of volume
+[2017.11.25-10.57.23:256][ 16]LogVolumetricLightmapImport:          1: 10.5% covering 3.1% of volume
+[2017.11.25-10.57.23:256][ 16]LogVolumetricLightmapImport:          2: 84.2% covering 0.4% of volume
+[2017.11.25-10.57.23:561][ 16]LogTexture: Display: Building textures: HQ_Lightmap0_1 (AutoDXT, 512X512)
+[2017.11.25-10.57.23:561][ 16]LogTexture: Display: Building textures: LQ_Lightmap_0_1 (DXT1, 512X512)
+[2017.11.25-10.57.23:561][ 16]LogTexture: Display: Building textures: HQ_Lightmap1_2 (AutoDXT, 1024X1024)
+[2017.11.25-10.57.23:561][ 16]LogTexture: Display: Building textures: LQ_Lightmap_1_2 (DXT1, 1024X1024)
+[2017.11.25-10.57.23:627][ 16]LogTexture: Display: Building textures: ShadowMapTexture2D_0 (BGRA8, 128X256)
+[2017.11.25-10.57.23:628][ 16]LogTexture: Display: Building textures: ShadowMapTexture2D_3 (BGRA8, 1024X256)
+[2017.11.25-10.57.23:669][ 16]Lightmass on DESKTOP-DOUD4N2: 1.80 sec total, 77 ms importing, 4 ms setup, 409 ms photons, 1.28 sec processing, 0 ms extra exporting [114/114 mappings]. Threads: 8.85 sec total, 3.74 sec processing.
+[2017.11.25-10.57.23:694][ 16]LogStaticLightingSystem: Illumination: 6.27 sec (269 ms encoding lightmaps, 60 ms encoding shadowmaps)
+[2017.11.25-10.57.23:694][ 16]LogStaticLightingSystem: Lightmap texture memory:  2.5 MB (2.0 MB streaming, 0.5 MB non-streaming), 4 textures
+[2017.11.25-10.57.23:694][ 16]LogStaticLightingSystem: Shadowmap texture memory: 1.5 MB (1.3 MB streaming, 0.2 MB non-streaming), 2 textures
+[2017.11.25-10.57.23:770][ 16]DumpUnbuiltLightIteractions
+[2017.11.25-10.57.23:770][ 16]Lights with unbuilt interactions: 0
+[2017.11.25-10.57.23:770][ 16]
+[2017.11.25-10.57.23:771][ 16]Primitives with unbuilt interactions: 0
+[2017.11.25-10.57.23:785][ 17]Cmd: MAP CHECK NOTIFYRESULTS
+[2017.11.25-10.57.23:785][ 17]MapCheck: New page: 0_Persistent - Nov 25, 2017, 12:57:23 PM
+[2017.11.25-10.57.23:896][ 17]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 110.553ms to complete.
+[2017.11.25-10.57.43:198][303]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor1)
+[2017.11.25-10.58.08:971][291]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor1)
+[2017.11.25-10.58.24:632][939]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor1)
+[2017.11.25-10.58.46:473][272]LogEditorViewport: Clicking Background
+[2017.11.25-10.58.49:481][630]LogEditorViewport: Clicking on Actor (LMB): PointLight (PointLight6)
+[2017.11.25-10.58.53:993][139]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor1)
+[2017.11.25-10.59.02:510][ 28]LogEditorViewport: Clicking Background
+[2017.11.25-10.59.03:396][132]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor1)
+[2017.11.25-10.59.04:450][251]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor1)
+[2017.11.25-10.59.17:923][834]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor4)
+[2017.11.25-10.59.29:194][123]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall18)
+[2017.11.25-10.59.30:560][277]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor4)
+[2017.11.25-11.00.07:502][501]LogEditorViewport: Clicking Background
+[2017.11.25-11.00.22:385][263]LogEditorViewport: Clicking Background
+[2017.11.25-11.00.23:847][436]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor4)
+[2017.11.25-11.02.19:760][983]Cmd: TRANSACTION UNDO
+[2017.11.25-11.02.19:760][983]LogEditorTransaction: Undo Move Actors
+[2017.11.25-11.02.20:527][ 62]Cmd: TRANSACTION UNDO
+[2017.11.25-11.02.20:527][ 62]LogEditorTransaction: Undo Set Location
+[2017.11.25-11.02.47:349][171]LogSavePackage: Save=90.27ms
+[2017.11.25-11.02.47:349][171]LogSavePackage: Moving '../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Saved/2_LevelDesign5A39B81B44B318485BCE51973CB276E7.tmp' to '../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Content/Maps/2_LevelDesign.umap'
+[2017.11.25-11.02.47:354][171]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Content/Maps/2_LevelDesign.umap
+[2017.11.25-11.02.47:448][171]LogSavePackage: Save=83.05ms
+[2017.11.25-11.02.47:448][171]LogSavePackage: Moving '../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Saved/2_LevelDesign_BuiltData75F69DF14E18040FB72A2197B2781AB5.tmp' to '../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Content/Maps/2_LevelDesign_BuiltData.uasset'
+[2017.11.25-11.02.47:453][171]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Content/Maps/2_LevelDesign_BuiltData.uasset
+[2017.11.25-11.02.53:991][929]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor1)
+[2017.11.25-11.03.32:674][435]MapCheck: New page: Map Check
+[2017.11.25-11.03.32:684][435]Cmd: MAP REBUILD ALLVISIBLE
+[2017.11.25-11.03.32:684][435]LogEditorServer: Rebuildmap Clear paths rebuilt
+[2017.11.25-11.03.32:708][435]LightingResults: New page: Lighting Build - Nov 25, 2017, 1:03:32 PM
+[2017.11.25-11.03.32:718][435]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
+[2017.11.25-11.03.32:721][435]LogSwarmInterface: [OpenConnection] Connecting to agent ...
+[2017.11.25-11.03.32:721][435]LogSwarmInterface: [TryOpenConnection] Testing the Agent
+[2017.11.25-11.03.32:721][435]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
+[2017.11.25-11.03.32:722][435]LogSwarmInterface: [TryOpenConnection] Local Process ID is 236
+[2017.11.25-11.03.37:252][435]LogStaticLightingSystem: Warning: No importance volume found, so the scene bounding box was used.  You can optimize your scene's quality and lighting build times by adding importance volumes.
+[2017.11.25-11.03.37:252][435]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
+[2017.11.25-11.03.37:252][435]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
+[2017.11.25-11.03.37:252][435]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
+[2017.11.25-11.03.37:252][435]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
+[2017.11.25-11.03.37:252][435]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
+[2017.11.25-11.03.37:556][435]LogEditorBuildUtils: Build time 0:04
+[2017.11.25-11.03.39:555][534]Job is a success!
+[2017.11.25-11.03.39:614][536]LogVolumetricLightmapImport: Imported Volumetric Lightmap in 0.008s
+[2017.11.25-11.03.39:614][536]LogVolumetricLightmapImport:      Indirection Texture 16x16x16 = 0.0Mb
+[2017.11.25-11.03.39:614][536]LogVolumetricLightmapImport:      BrickData 110x5x5 = 0.1Mb
+[2017.11.25-11.03.39:614][536]LogVolumetricLightmapImport:      Bricks at Level
+[2017.11.25-11.03.39:614][536]LogVolumetricLightmapImport:          0: 4.5% covering 100.0% of volume
+[2017.11.25-11.03.39:614][536]LogVolumetricLightmapImport:          1: 9.1% covering 3.1% of volume
+[2017.11.25-11.03.39:614][536]LogVolumetricLightmapImport:          2: 86.4% covering 0.5% of volume
+[2017.11.25-11.03.39:908][536]LogTexture: Display: Building textures: HQ_Lightmap1_1 (AutoDXT, 512X512)
+[2017.11.25-11.03.39:908][536]LogTexture: Display: Building textures: LQ_Lightmap_1_1 (DXT1, 512X512)
+[2017.11.25-11.03.39:908][536]LogTexture: Display: Building textures: HQ_Lightmap0_2 (AutoDXT, 1024X1024)
+[2017.11.25-11.03.39:908][536]LogTexture: Display: Building textures: LQ_Lightmap_0_2 (DXT1, 1024X1024)
+[2017.11.25-11.03.39:977][536]LogTexture: Display: Building textures: ShadowMapTexture2D_4 (BGRA8, 128X256)
+[2017.11.25-11.03.39:977][536]LogTexture: Display: Building textures: ShadowMapTexture2D_5 (BGRA8, 1024X256)
+[2017.11.25-11.03.40:001][536]Lightmass on DESKTOP-DOUD4N2: 1.89 sec total, 79 ms importing, 5 ms setup, 403 ms photons, 1.38 sec processing, 0 ms extra exporting [117/117 mappings]. Threads: 9.55 sec total, 4.13 sec processing.
+[2017.11.25-11.03.40:011][536]LogStaticLightingSystem: Illumination: 7.28 sec (258 ms encoding lightmaps, 65 ms encoding shadowmaps)
+[2017.11.25-11.03.40:011][536]LogStaticLightingSystem: Lightmap texture memory:  2.5 MB (2.0 MB streaming, 0.5 MB non-streaming), 4 textures
+[2017.11.25-11.03.40:011][536]LogStaticLightingSystem: Shadowmap texture memory: 1.5 MB (1.3 MB streaming, 0.2 MB non-streaming), 2 textures
+[2017.11.25-11.03.40:254][536]DumpUnbuiltLightIteractions
+[2017.11.25-11.03.40:254][536]Lights with unbuilt interactions: 0
+[2017.11.25-11.03.40:254][536]
+[2017.11.25-11.03.40:254][536]Primitives with unbuilt interactions: 0
+[2017.11.25-11.03.40:268][537]Cmd: MAP CHECK NOTIFYRESULTS
+[2017.11.25-11.03.40:268][537]MapCheck: New page: 0_Persistent - Nov 25, 2017, 1:03:40 PM
+[2017.11.25-11.03.40:355][537]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 86.917ms to complete.
+[2017.11.25-11.03.57:863][618]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Space Tisch1)
+[2017.11.25-11.05.56:458][469]LogEditorViewport: Clicking Background
+[2017.11.25-11.06.06:095][610]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Space Schrank 2)
+[2017.11.25-11.07.24:524][849]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor1)
+[2017.11.25-11.08.07:923][537]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor4)
+[2017.11.25-11.08.34:826][425]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor4)
+[2017.11.25-11.08.47:931][862]LogEditorViewport: Clicking Background
+[2017.11.25-11.08.52:005][345]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor4)
+[2017.11.25-11.09.27:317][465]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall1)
+[2017.11.25-11.10.03:431][675]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor1)
+[2017.11.25-11.10.04:246][764]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall3)
+[2017.11.25-11.10.11:136][574]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall25)
+[2017.11.25-11.10.17:950][228]Cmd: TRANSACTION UNDO
+[2017.11.25-11.10.17:950][228]LogEditorTransaction: Undo Set Scale
+[2017.11.25-11.10.19:684][413]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (Wall1)
+[2017.11.25-11.10.27:689][180]Cmd: TRANSACTION UNDO
+[2017.11.25-11.10.27:689][180]LogEditorTransaction: Undo Set Location
+[2017.11.25-11.10.31:642][505]Cmd: TRANSACTION UNDO
+[2017.11.25-11.10.31:642][505]LogEditorTransaction: Undo Set Location
+[2017.11.25-11.10.32:002][529]Cmd: TRANSACTION UNDO
+[2017.11.25-11.10.32:002][529]LogEditorTransaction: Undo Clicking on Actors
+[2017.11.25-11.10.35:219][893]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (Wall1)
+[2017.11.25-11.10.41:040][469]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall1)
+[2017.11.25-11.10.42:444][626]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (Wall25)
+[2017.11.25-11.10.54:252][ 11]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor4)
+[2017.11.25-11.11.01:835][895]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall25)
+[2017.11.25-11.11.07:148][511]LogEditorViewport: Clicking on Actor (LMB): PointLight (PointLight8)
+[2017.11.25-11.11.14:842][387]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall25)
+[2017.11.25-11.12.07:673][ 78]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor4)
+[2017.11.25-11.12.09:461][285]LogEditorViewport: Clicking Background
+[2017.11.25-11.12.09:922][339]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall21)
+[2017.11.25-11.12.16:580][ 94]LogEditorViewport: Clicking Background
+[2017.11.25-11.12.16:975][140]LogEditorViewport: Clicking Background
+[2017.11.25-11.12.17:462][198]LogEditorViewport: Clicking Background
+[2017.11.25-11.12.29:074][571]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall1)
+[2017.11.25-11.12.37:271][532]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall25)
+[2017.11.25-11.13.02:375][342]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall1)
+[2017.11.25-11.13.06:468][793]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall2)
+[2017.11.25-11.13.44:845][983]LogSavePackage: Save=95.68ms
+[2017.11.25-11.13.44:846][983]LogSavePackage: Moving '../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Saved/2_LevelDesign1A51984E4F531E59B65D36921E61952B.tmp' to '../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Content/Maps/2_LevelDesign.umap'
+[2017.11.25-11.13.44:850][983]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Content/Maps/2_LevelDesign.umap
+[2017.11.25-11.13.44:945][983]LogSavePackage: Save=83.24ms
+[2017.11.25-11.13.44:945][983]LogSavePackage: Moving '../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Saved/2_LevelDesign_BuiltDataD8C4F8EC4FB6BB5446008394D21D9A00.tmp' to '../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Content/Maps/2_LevelDesign_BuiltData.uasset'
+[2017.11.25-11.13.44:949][983]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Content/Maps/2_LevelDesign_BuiltData.uasset
+[2017.11.25-11.13.50:141][583]Cmd: DELETE
+[2017.11.25-11.13.50:141][583]Cmd: ACTOR DELETE
+[2017.11.25-11.13.50:144][583]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.11.25-11.13.50:152][583]LogEditorActor: Deleted 1 Actors (0.011 secs)
+[2017.11.25-11.13.52:164][823]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor4)
+[2017.11.25-11.13.53:242][944]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall1)
+[2017.11.25-11.13.54:281][ 60]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall25)
+[2017.11.25-11.13.55:155][156]LogEditorViewport: Clicking Background
+[2017.11.25-11.13.55:511][196]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall26)
+[2017.11.25-11.13.56:243][276]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall17)
+[2017.11.25-11.14.01:613][896]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall3)
+[2017.11.25-11.14.05:617][360]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall1)
+[2017.11.25-11.14.08:378][678]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall2)
+[2017.11.25-11.14.10:132][878]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall3)
+[2017.11.25-11.14.11:163][993]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall1)
+[2017.11.25-11.14.13:255][234]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (Wall3)
+[2017.11.25-11.14.20:647][ 85]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall2)
+[2017.11.25-11.14.26:446][763]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (Wall1)
+[2017.11.25-11.14.27:626][895]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (Wall3)
+[2017.11.25-11.14.28:217][957]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (Wall25)
+[2017.11.25-11.14.29:228][ 67]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (Wall1)
+[2017.11.25-11.14.29:867][135]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (Wall26)
+[2017.11.25-11.14.38:473][900]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall1)
+[2017.11.25-11.14.41:877][284]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall3)
+[2017.11.25-11.14.43:212][434]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (Wall1)
+[2017.11.25-11.14.53:024][571]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall2)
+[2017.11.25-11.15.00:259][411]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall25)
+[2017.11.25-11.15.00:894][478]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall1)
+[2017.11.25-11.15.01:537][547]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall26)
+[2017.11.25-11.15.02:546][659]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (Wall25)
+[2017.11.25-11.15.03:181][726]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (Wall1)
+[2017.11.25-11.15.05:975][ 50]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall1)
+[2017.11.25-11.15.07:428][215]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall26)
+[2017.11.25-11.15.15:246][122]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor1)
+[2017.11.25-11.15.16:009][205]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall2)
+[2017.11.25-11.15.18:766][513]MapCheck: New page: Map Check
+[2017.11.25-11.15.18:778][513]Cmd: MAP REBUILD ALLVISIBLE
+[2017.11.25-11.15.18:778][513]LogEditorServer: Rebuildmap Clear paths rebuilt
+[2017.11.25-11.15.18:804][513]LightingResults: New page: Lighting Build - Nov 25, 2017, 1:15:18 PM
+[2017.11.25-11.15.18:814][513]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
+[2017.11.25-11.15.18:815][513]LogSwarmInterface: [OpenConnection] Connecting to agent ...
+[2017.11.25-11.15.18:815][513]LogSwarmInterface: [TryOpenConnection] Testing the Agent
+[2017.11.25-11.15.18:816][513]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
+[2017.11.25-11.15.18:816][513]LogSwarmInterface: [TryOpenConnection] Local Process ID is 236
+[2017.11.25-11.15.23:344][513]LogStaticLightingSystem: Warning: No importance volume found, so the scene bounding box was used.  You can optimize your scene's quality and lighting build times by adding importance volumes.
+[2017.11.25-11.15.23:344][513]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
+[2017.11.25-11.15.23:344][513]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
+[2017.11.25-11.15.23:345][513]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
+[2017.11.25-11.15.23:345][513]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
+[2017.11.25-11.15.23:345][513]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
+[2017.11.25-11.15.23:631][513]LogEditorBuildUtils: Build time 0:04
+[2017.11.25-11.15.25:790][616]Job is a success!
+[2017.11.25-11.15.25:842][617]LogVolumetricLightmapImport: Imported Volumetric Lightmap in 0.009s
+[2017.11.25-11.15.25:842][617]LogVolumetricLightmapImport:      Indirection Texture 16x16x16 = 0.0Mb
+[2017.11.25-11.15.25:842][617]LogVolumetricLightmapImport:      BrickData 120x5x5 = 0.1Mb
+[2017.11.25-11.15.25:842][617]LogVolumetricLightmapImport:      Bricks at Level
+[2017.11.25-11.15.25:842][617]LogVolumetricLightmapImport:          0: 4.2% covering 100.0% of volume
+[2017.11.25-11.15.25:842][617]LogVolumetricLightmapImport:          1: 8.3% covering 3.1% of volume
+[2017.11.25-11.15.25:842][617]LogVolumetricLightmapImport:          2: 87.5% covering 0.5% of volume
+[2017.11.25-11.15.26:154][617]LogTexture: Display: Building textures: HQ_Lightmap0_1 (AutoDXT, 512X512)
+[2017.11.25-11.15.26:155][617]LogTexture: Display: Building textures: LQ_Lightmap_0_1 (DXT1, 512X512)
+[2017.11.25-11.15.26:155][617]LogTexture: Display: Building textures: HQ_Lightmap1_2 (AutoDXT, 1024X1024)
+[2017.11.25-11.15.26:155][617]LogTexture: Display: Building textures: LQ_Lightmap_1_2 (DXT1, 1024X1024)
+[2017.11.25-11.15.26:223][617]LogTexture: Display: Building textures: ShadowMapTexture2D_6 (BGRA8, 128X256)
+[2017.11.25-11.15.26:223][617]LogTexture: Display: Building textures: ShadowMapTexture2D_7 (BGRA8, 1024X256)
+[2017.11.25-11.15.26:235][617]Lightmass on DESKTOP-DOUD4N2: 2.02 sec total, 78 ms importing, 5 ms setup, 418 ms photons, 1.51 sec processing, 0 ms extra exporting [124/124 mappings]. Threads: 10.4 sec total, 4.53 sec processing.
+[2017.11.25-11.15.26:258][617]LogStaticLightingSystem: Illumination: 7.43 sec (274 ms encoding lightmaps, 64 ms encoding shadowmaps)
+[2017.11.25-11.15.26:258][617]LogStaticLightingSystem: Lightmap texture memory:  2.5 MB (2.0 MB streaming, 0.5 MB non-streaming), 4 textures
+[2017.11.25-11.15.26:258][617]LogStaticLightingSystem: Shadowmap texture memory: 1.5 MB (1.3 MB streaming, 0.2 MB non-streaming), 2 textures
+[2017.11.25-11.15.26:345][617]DumpUnbuiltLightIteractions
+[2017.11.25-11.15.26:345][617]Lights with unbuilt interactions: 0
+[2017.11.25-11.15.26:345][617]
+[2017.11.25-11.15.26:345][617]Primitives with unbuilt interactions: 0
+[2017.11.25-11.15.26:360][618]Cmd: MAP CHECK NOTIFYRESULTS
+[2017.11.25-11.15.26:360][618]MapCheck: New page: 0_Persistent - Nov 25, 2017, 1:15:26 PM
+[2017.11.25-11.15.26:451][618]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 91.109ms to complete.
+[2017.11.25-11.15.31:568][208]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall26)
+[2017.11.25-11.15.47:830][110]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall2)
+[2017.11.25-11.15.49:610][312]LogEditorViewport: Clicking on Actor (double click): StaticMeshActor (Wall26)
+[2017.11.25-11.16.04:707][983]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall25)
+[2017.11.25-11.16.10:464][561]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall3)
+[2017.11.25-11.16.20:824][745]LogSavePackage: Save=96.72ms
+[2017.11.25-11.16.20:824][745]LogSavePackage: Moving '../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Saved/2_LevelDesignFCA6112F4CD8F2B5398006B14F2BAAFF.tmp' to '../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Content/Maps/2_LevelDesign.umap'
+[2017.11.25-11.16.20:829][745]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Content/Maps/2_LevelDesign.umap
+[2017.11.25-11.16.20:926][745]LogSavePackage: Save=88.98ms
+[2017.11.25-11.16.20:927][745]LogSavePackage: Moving '../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Saved/2_LevelDesign_BuiltData9B52080848FCE3543A14BAAE14F55794.tmp' to '../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Content/Maps/2_LevelDesign_BuiltData.uasset'
+[2017.11.25-11.16.20:932][745]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Content/Maps/2_LevelDesign_BuiltData.uasset
+[2017.11.25-11.16.28:058][581]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Space Tisch2)
+[2017.11.25-11.17.33:130][621]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor1)
+[2017.11.25-11.17.36:685][ 30]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall25)
+[2017.11.25-11.17.38:472][234]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall25)
+[2017.11.25-11.17.58:784][482]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor4)
+[2017.11.25-11.17.59:489][557]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor1)
+[2017.11.25-11.18.00:274][643]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor4)
+[2017.11.25-11.18.02:409][887]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor1)
+[2017.11.25-11.18.03:973][ 66]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor4)
+[2017.11.25-11.18.31:221][107]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor1)
+[2017.11.25-11.18.32:931][302]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor1)
+[2017.11.25-11.18.43:897][564]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor1)
+[2017.11.25-11.18.46:831][903]LogEditorViewport: Clicking on Actor (LMB): PointLight (PointLight8)
+[2017.11.25-11.18.56:525][992]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor5)
+[2017.11.25-11.19.01:995][629]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (Floor5)
+[2017.11.25-11.19.02:589][690]LogEditorViewport: Clicking Background
+[2017.11.25-11.19.10:301][607]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor5)
+[2017.11.25-11.19.24:215][974]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall1)
+[2017.11.25-11.19.25:089][ 71]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall3)
+[2017.11.25-11.19.27:744][374]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor5)
+[2017.11.25-11.19.54:514][546]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor5)
+[2017.11.25-11.20.04:676][726]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor5)
+[2017.11.25-11.20.05:610][834]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall3)
+[2017.11.25-11.21.33:530][757]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall27)
+[2017.11.25-11.21.41:764][722]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall27)
+[2017.11.25-11.22.02:405][135]LogEditorViewport: Clicking Background
+[2017.11.25-11.22.09:702][993]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall27)
+[2017.11.25-11.22.50:033][691]LogEditorViewport: Clicking Background
+[2017.11.25-11.22.50:771][777]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall29)
+[2017.11.25-11.23.02:544][172]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall27)
+[2017.11.25-11.23.22:462][532]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall29)
+[2017.11.25-11.23.50:859][813]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall29)
+[2017.11.25-11.24.11:536][189]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (Floor5)
+[2017.11.25-11.24.15:385][590]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall31)
+[2017.11.25-11.24.20:441][184]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall28)
+[2017.11.25-11.24.42:000][719]LogSavePackage: Save=107.18ms
+[2017.11.25-11.24.42:000][719]LogSavePackage: Moving '../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Saved/2_LevelDesignE303B17F48070FEBAF5EC6A3E9D08EEC.tmp' to '../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Content/Maps/2_LevelDesign.umap'
+[2017.11.25-11.24.42:005][719]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Content/Maps/2_LevelDesign.umap
+[2017.11.25-11.24.42:107][719]LogSavePackage: Save=89.25ms
+[2017.11.25-11.24.42:107][719]LogSavePackage: Moving '../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Saved/2_LevelDesign_BuiltData42CC880B4CA553FD230322B16FF4467E.tmp' to '../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Content/Maps/2_LevelDesign_BuiltData.uasset'
+[2017.11.25-11.24.42:109][719]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Content/Maps/2_LevelDesign_BuiltData.uasset
+[2017.11.25-11.24.48:272][388]LogEditorViewport: Clicking on Actor (LMB): PointLight (PointLight9)
+[2017.11.25-11.25.15:342][514]LogSavePackage: Save=105.97ms
+[2017.11.25-11.25.15:342][514]LogSavePackage: Moving '../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Saved/2_LevelDesignF77C22C24915A354110653B0D52F804C.tmp' to '../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Content/Maps/2_LevelDesign.umap'
+[2017.11.25-11.25.15:346][514]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Content/Maps/2_LevelDesign.umap
+[2017.11.25-11.25.15:442][514]LogSavePackage: Save=87.57ms
+[2017.11.25-11.25.15:442][514]LogSavePackage: Moving '../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Saved/2_LevelDesign_BuiltDataCF2925364E3A4F4C22DE4B8DB6D5DF99.tmp' to '../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Content/Maps/2_LevelDesign_BuiltData.uasset'
+[2017.11.25-11.25.15:444][514]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Content/Maps/2_LevelDesign_BuiltData.uasset
+[2017.11.25-11.25.29:131][120]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Space Tisch4)
+[2017.11.25-11.26.36:883][242]Cmd: BRUSH ADD SELECTNEWBRUSH
+[2017.11.25-11.26.38:512][430]Cmd: DELETE
+[2017.11.25-11.26.38:512][430]Cmd: ACTOR DELETE
+[2017.11.25-11.26.38:516][430]LogEditorActor: Deleted Actor: Brush
+[2017.11.25-11.26.38:528][430]LogEditorActor: Deleted 1 Actors (0.016 secs)
+[2017.11.25-11.26.42:480][897]LogActorFactory: Actor Factory created Cube
+[2017.11.25-11.26.43:705][ 42]LogActorFactory: Actor Factory created Cube
+[2017.11.25-11.27.45:162][918]LogSavePackage: Save=116.19ms
+[2017.11.25-11.27.45:162][918]LogSavePackage: Moving '../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Saved/2_LevelDesign3EF40E7647BCDB9A8B04328642200E17.tmp' to '../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Content/Maps/2_LevelDesign.umap'
+[2017.11.25-11.27.45:174][918]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Content/Maps/2_LevelDesign.umap
+[2017.11.25-11.27.45:271][918]LogSavePackage: Save=88.67ms
+[2017.11.25-11.27.45:271][918]LogSavePackage: Moving '../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Saved/2_LevelDesign_BuiltData8816F28344ED5798DDF3E4924DEFEE7C.tmp' to '../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Content/Maps/2_LevelDesign_BuiltData.uasset'
+[2017.11.25-11.27.45:274][918]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Content/Maps/2_LevelDesign_BuiltData.uasset
+[2017.11.25-11.27.46:494][ 55]LogEditorViewport: Clicking on Actor (LMB): PointLight (PointLight9)
+[2017.11.25-11.28.00:357][571]Cmd: BRUSH ADD SELECTNEWBRUSH
+[2017.11.25-11.28.30:153][ 45]Cmd: DELETE
+[2017.11.25-11.28.30:153][ 45]Cmd: ACTOR DELETE
+[2017.11.25-11.28.30:156][ 45]LogEditorActor: Deleted Actor: Brush
+[2017.11.25-11.28.30:170][ 45]LogEditorActor: Deleted 1 Actors (0.017 secs)
+[2017.11.25-11.28.41:010][311]Cmd: BRUSH ADD SELECTNEWBRUSH
+[2017.11.25-11.29.32:720][134]LogEditorViewport: Clicking Background
+[2017.11.25-11.29.41:650][177]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor5)
+[2017.11.25-11.29.56:796][965]LogEditorViewport: Clicking on Actor (LMB): Brush (Linear Stair Brush)
+[2017.11.25-11.29.57:376][ 29]LogEditorViewport: Clicking Background
+[2017.11.25-11.30.42:712][218]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall30)
+[2017.11.25-11.31.11:394][472]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor5)
+[2017.11.25-11.31.17:390][139]LogEditorViewport: Clicking Background
+[2017.11.25-11.31.17:813][176]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall33)
+[2017.11.25-11.31.31:281][406]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor5)
+[2017.11.25-11.31.33:522][661]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall33)
+[2017.11.25-11.32.10:499][467]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall34)
+[2017.11.25-11.32.17:401][215]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor5)
+[2017.11.25-11.33.12:623][127]MapCheck: New page: Map Check
+[2017.11.25-11.33.12:636][127]Cmd: MAP REBUILD ALLVISIBLE
+[2017.11.25-11.33.12:638][127]LogEditorServer: Rebuildmap Clear paths rebuilt
+[2017.11.25-11.33.12:670][127]LightingResults: New page: Lighting Build - Nov 25, 2017, 1:33:12 PM
+[2017.11.25-11.33.12:680][127]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
+[2017.11.25-11.33.12:682][127]LogSwarmInterface: [OpenConnection] Connecting to agent ...
+[2017.11.25-11.33.12:682][127]LogSwarmInterface: [TryOpenConnection] Testing the Agent
+[2017.11.25-11.33.12:683][127]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
+[2017.11.25-11.33.12:683][127]LogSwarmInterface: [TryOpenConnection] Local Process ID is 236
+[2017.11.25-11.33.17:195][127]LogStaticLightingSystem: Warning: No importance volume found, so the scene bounding box was used.  You can optimize your scene's quality and lighting build times by adding importance volumes.
+[2017.11.25-11.33.17:195][127]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
+[2017.11.25-11.33.17:195][127]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
+[2017.11.25-11.33.17:195][127]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
+[2017.11.25-11.33.17:195][127]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
+[2017.11.25-11.33.17:195][127]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
+[2017.11.25-11.33.17:493][127]LogEditorBuildUtils: Build time 0:04
+[2017.11.25-11.33.19:737][232]Job is a success!
+[2017.11.25-11.33.19:786][233]LogVolumetricLightmapImport: Imported Volumetric Lightmap in 0.009s
+[2017.11.25-11.33.19:786][233]LogVolumetricLightmapImport:      Indirection Texture 16x16x16 = 0.0Mb
+[2017.11.25-11.33.19:786][233]LogVolumetricLightmapImport:      BrickData 120x5x5 = 0.1Mb
+[2017.11.25-11.33.19:786][233]LogVolumetricLightmapImport:      Bricks at Level
+[2017.11.25-11.33.19:786][233]LogVolumetricLightmapImport:          0: 4.2% covering 100.0% of volume
+[2017.11.25-11.33.19:786][233]LogVolumetricLightmapImport:          1: 8.3% covering 3.1% of volume
+[2017.11.25-11.33.19:786][233]LogVolumetricLightmapImport:          2: 87.5% covering 0.5% of volume
+[2017.11.25-11.33.20:160][233]LogTexture: Display: Building textures: HQ_Lightmap1_1 (AutoDXT, 512X512)
+[2017.11.25-11.33.20:160][233]LogTexture: Display: Building textures: LQ_Lightmap_1_1 (DXT1, 512X512)
+[2017.11.25-11.33.20:160][233]LogTexture: Display: Building textures: HQ_Lightmap0_2 (AutoDXT, 1024X1024)
+[2017.11.25-11.33.20:160][233]LogTexture: Display: Building textures: LQ_Lightmap_0_2 (DXT1, 1024X1024)
+[2017.11.25-11.33.20:302][233]LogTexture: Display: Building textures: ShadowMapTexture2D_8 (BGRA8, 128X256)
+[2017.11.25-11.33.20:302][233]LogTexture: Display: Building textures: ShadowMapTexture2D_9 (BGRA8, 1024X512)
+[2017.11.25-11.33.20:323][233]Lightmass on DESKTOP-DOUD4N2: 2.29 sec total, 70 ms importing, 6 ms setup, 453 ms photons, 1.74 sec processing, 0 ms extra exporting [161/161 mappings]. Threads: 12.0 sec total, 5.65 sec processing.
+[2017.11.25-11.33.20:333][233]LogStaticLightingSystem: Illumination: 7.64 sec (325 ms encoding lightmaps, 138 ms encoding shadowmaps)
+[2017.11.25-11.33.20:333][233]LogStaticLightingSystem: Lightmap texture memory:  2.5 MB (2.0 MB streaming, 0.5 MB non-streaming), 4 textures
+[2017.11.25-11.33.20:333][233]LogStaticLightingSystem: Shadowmap texture memory: 2.8 MB (2.7 MB streaming, 0.2 MB non-streaming), 2 textures
+[2017.11.25-11.33.21:196][233]DumpUnbuiltLightIteractions
+[2017.11.25-11.33.21:197][233]Lights with unbuilt interactions: 0
+[2017.11.25-11.33.21:197][233]
+[2017.11.25-11.33.21:197][233]Primitives with unbuilt interactions: 0
+[2017.11.25-11.33.21:211][234]Cmd: MAP CHECK NOTIFYRESULTS
+[2017.11.25-11.33.21:212][234]MapCheck: New page: 0_Persistent - Nov 25, 2017, 1:33:21 PM
+[2017.11.25-11.33.21:296][234]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 84.1ms to complete.
+[2017.11.25-11.33.26:523][828]LogSavePackage: Save=120.49ms
+[2017.11.25-11.33.26:523][828]LogSavePackage: Moving '../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Saved/2_LevelDesignBC23736D4CA8329CE8C661BA749CE2C4.tmp' to '../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Content/Maps/2_LevelDesign.umap'
+[2017.11.25-11.33.26:527][828]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Content/Maps/2_LevelDesign.umap
+[2017.11.25-11.33.26:646][828]LogSavePackage: Save=105.18ms
+[2017.11.25-11.33.26:646][828]LogSavePackage: Moving '../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Saved/2_LevelDesign_BuiltData301D7EEA489C6F453C34C6AD0D210F1A.tmp' to '../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Content/Maps/2_LevelDesign_BuiltData.uasset'
+[2017.11.25-11.33.26:651][828]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Content/Maps/2_LevelDesign_BuiltData.uasset
+[2017.11.25-11.37.19:373][320]LogSavePackage: Save=126.46ms
+[2017.11.25-11.37.19:373][320]LogSavePackage: Moving '../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Saved/2_LevelDesign7E3199694786BB30E63BF2AE16A8ED27.tmp' to '../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Content/Maps/2_LevelDesign.umap'
+[2017.11.25-11.37.19:375][320]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Content/Maps/2_LevelDesign.umap
+[2017.11.25-11.37.19:489][320]LogSavePackage: Save=104.47ms
+[2017.11.25-11.37.19:489][320]LogSavePackage: Moving '../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Saved/2_LevelDesign_BuiltDataD7433ED8455FA5A1E71D928D2E5ACC68.tmp' to '../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Content/Maps/2_LevelDesign_BuiltData.uasset'
+[2017.11.25-11.37.19:492][320]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Anna/Documents/GitHub/TwinStickShooter/TwinStickShooter 4.18/Content/Maps/2_LevelDesign_BuiltData.uasset
